@@ -62,7 +62,7 @@ def run_evaluation(disable_reranking: bool = False) -> dict:
             def predict(self, pairs):
                 return [0.0] * len(pairs)
         rag.reranker = _DummyReranker()
-        print("⚠️  REGRESSION MODE: Reranking disabled.")
+        print("[REGRESSION MODE] Reranking disabled.")
 
     questions = load_eval_set()
     results = []

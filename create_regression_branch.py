@@ -24,8 +24,14 @@ QUALITY_THRESHOLD = 0.99   # was 0.40
 '''
 
 def run_git(args, check=True):
+    git_bin = "git"
+    git_path_file = ROOT / "git_path.txt"
+    if git_path_file.exists():
+        p = git_path_file.read_text(encoding="utf-8").strip()
+        if Path(p).exists():
+            git_bin = p
     result = subprocess.run(
-        ["git"] + args,
+        [git_bin] + args,
         cwd=str(ROOT),
         capture_output=True,
         text=True,
