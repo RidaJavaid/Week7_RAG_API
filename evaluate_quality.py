@@ -20,7 +20,7 @@ from pathlib import Path
 # ─── Paths ────────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent
 EVAL_FILE = ROOT / "eval_questions.json"
-QUALITY_THRESHOLD = 0.40   # 40% keyword overlap minimum (documented threshold)
+QUALITY_THRESHOLD = 0.99  # REGRESSION INJECTION   # 40% keyword overlap minimum (documented threshold)
 
 
 def tokenize(text: str) -> set:
