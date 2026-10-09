@@ -1,0 +1,30 @@
+{
+    "e833f09addb3e99b317d899989eb35c574eaccd7542afe4c9f4ed9b9095dc909": {
+        "original_filename": "test_rag.txt",
+        "stored_filename": "e833f09addb3e99b317d899989eb35c574eaccd7542afe4c9f4ed9b9095dc909.txt"
+    },
+    "4b102445e6e0a45cece5be7f532c8a12d773e79f628ab8c18a16a9f1ce247503": {
+        "original_filename": "python_notes.txt",
+        "stored_filename": "4b102445e6e0a45cece5be7f532c8a12d773e79f628ab8c18a16a9f1ce247503.txt"
+    },
+    "59caf04953184dc2be16f9cb31bcbc2e37e7381469487f93b746d6711a9ed885": {
+        "original_filename": "01_machine_learning.txt",
+        "stored_filename": "59caf04953184dc2be16f9cb31bcbc2e37e7381469487f93b746d6711a9ed885.txt"
+    },
+    "4da5c0c70e28c55c33c8ce34910240ad3f43e1d486eefdd916c94cbea19188cb": {
+        "original_filename": "02_embeddings.txt",
+        "stored_filename": "4da5c0c70e28c55c33c8ce34910240ad3f43e1d486eefdd916c94cbea19188cb.txt"
+    },
+    "b57b28c8e01c5dcb287d2a2daae78b9727cebb69f092be31ffd04328133151d4": {
+        "original_filename": "03_rag.txt",
+        "stored_filename": "b57b28c8e01c5dcb287d2a2daae78b9727cebb69f092be31ffd04328133151d4.txt"
+    },
+    "a70b67df529974688113159ce1499eceb90f00e9ee7003128201b2f36778cd0f": {
+        "original_filename": "04_vector_search.txt",
+        "stored_filename": "a70b67df529974688113159ce1499eceb90f00e9ee7003128201b2f36778cd0f.txt"
+    },
+    "c27a8e9e1ea295cf5d025e3f49b0f6a4580d524eb0909166c937b3d05eaa6a91": {
+        "original_filename": "05_chunking_bm25_reranking.txt",
+        "stored_filename": "c27a8e9e1ea295cf5d025e3f49b0f6a4580d524eb0909166c937b3d05eaa6a91.txt"
+    }
+}

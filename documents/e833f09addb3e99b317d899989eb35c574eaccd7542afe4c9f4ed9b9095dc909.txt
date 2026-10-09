@@ -1,0 +1,1 @@
+RAG combines document retrieval with answer generation.

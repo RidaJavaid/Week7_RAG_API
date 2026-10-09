@@ -1,0 +1,164 @@
+{
+  "rerank_mode": "cosine_fast",
+  "total_latency_stats": {
+    "median": 1.5716,
+    "mean": 1.5378,
+    "p95": 1.749,
+    "min": 1.0662,
+    "max": 1.7909
+  },
+  "stage_stats": {
+    "Embedding": {
+      "median": 1.5663,
+      "mean": 1.5316,
+      "p95": 1.7465,
+      "min": 1.0432,
+      "max": 1.7882
+    },
+    "Retrieval": {
+      "median": 0.0007,
+      "mean": 0.0014,
+      "p95": 0.0033,
+      "min": 0.0004,
+      "max": 0.0048
+    },
+    "Reranking": {
+      "median": 0.0002,
+      "mean": 0.0004,
+      "p95": 0.0003,
+      "min": 0.0001,
+      "max": 0.0022
+    },
+    "Generation": {
+      "median": 0.0004,
+      "mean": 0.0007,
+      "p95": 0.0008,
+      "min": 0.0001,
+      "max": 0.0037
+    }
+  },
+  "slowest_stage": "Embedding",
+  "api_cost_per_request_usd": 0.0,
+  "cost_note": "All models are local. No paid API is used.",
+  "speed_target_median_s": 3.0,
+  "speed_target_p95_s": 5.0,
+  "gap_median_s": -1.4284,
+  "gap_p95_s": -3.251,
+  "vs_baseline": {
+    "baseline_median_s": 20.38,
+    "optimized_median_s": 1.5716,
+    "speedup_x": 13.0
+  },
+  "runs": [
+    {
+      "run": "1",
+      "question": "What is Retrieval-Augmented Generation?",
+      "total_latency_s": "1.3527",
+      "embedding_s": "1.3432",
+      "retrieval_s": "0.0048",
+      "reranking_s": "0.0022",
+      "generation_s": "0.0008",
+      "api_cost_usd": "0.0",
+      "answer": "Retrieval-Augmented Generation, or RAG, combines information retrieval with language-model generation."
+    },
+    {
+      "run": "2",
+      "question": "How does BM25 work in information retrieval?",
+      "total_latency_s": "1.4352",
+      "embedding_s": "1.431",
+      "retrieval_s": "0.0007",
+      "reranking_s": "0.0001",
+      "generation_s": "0.0005",
+      "api_cost_usd": "0.0",
+      "answer": "Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit."
+    },
+    {
+      "run": "3",
+      "question": "What is FAISS used for?",
+      "total_latency_s": "1.7909",
+      "embedding_s": "1.7882",
+      "retrieval_s": "0.0008",
+      "reranking_s": "0.0003",
+      "generation_s": "0.0004",
+      "api_cost_usd": "0.0",
+      "answer": "FAISS is a library for efficient similarity search over dense vectors."
+    },
+    {
+      "run": "4",
+      "question": "How does SentenceTransformer convert text?",
+      "total_latency_s": "1.749",
+      "embedding_s": "1.7465",
+      "retrieval_s": "0.0006",
+      "reranking_s": "0.0001",
+      "generation_s": "0.0004",
+      "api_cost_usd": "0.0",
+      "answer": "Embeddings are dense numerical vectors that represent the meaning or characteristics of text."
+    },
+    {
+      "run": "5",
+      "question": "What is CrossEncoder reranking?",
+      "total_latency_s": "1.6526",
+      "embedding_s": "1.6509",
+      "retrieval_s": "0.0004",
+      "reranking_s": "0.0001",
+      "generation_s": "0.0002",
+      "api_cost_usd": "0.0",
+      "answer": "LLM-as-judge reranking can use richer instructions but is generally more expensive, slower, and potentially less deterministic."
+    },
+    {
+      "run": "6",
+      "question": "How does RAG combine retrieval and generation?",
+      "total_latency_s": "1.4789",
+      "embedding_s": "1.4768",
+      "retrieval_s": "0.0007",
+      "reranking_s": "0.0001",
+      "generation_s": "0.0001",
+      "api_cost_usd": "0.0",
+      "answer": "RAG combines document retrieval with answer generation."
+    },
+    {
+      "run": "7",
+      "question": "What is a vector embedding?",
+      "total_latency_s": "1.7097",
+      "embedding_s": "1.7034",
+      "retrieval_s": "0.0005",
+      "reranking_s": "0.0001",
+      "generation_s": "0.0001",
+      "api_cost_usd": "0.0",
+      "answer": "vector index stores embeddings and supports nearest-neighbor search."
+    },
+    {
+      "run": "8",
+      "question": "What programming language is used for AI and ML?",
+      "total_latency_s": "1.6173",
+      "embedding_s": "1.6103",
+      "retrieval_s": "0.0007",
+      "reranking_s": "0.0002",
+      "generation_s": "0.0002",
+      "api_cost_usd": "0.0",
+      "answer": "Python is a high-level programming language used for artificial intelligence, machine learning, and web development."
+    },
+    {
+      "run": "9",
+      "question": "How does hybrid retrieval improve search quality?",
+      "total_latency_s": "1.0662",
+      "embedding_s": "1.0432",
+      "retrieval_s": "0.0033",
+      "reranking_s": "0.0002",
+      "generation_s": "0.0037",
+      "api_cost_usd": "0.0",
+      "answer": "Hybrid retrieval combines sparse and dense signals to improve candidate coverage."
+    },
+    {
+      "run": "10",
+      "question": "What is the role of dense retrieval in RAG?",
+      "total_latency_s": "1.5258",
+      "embedding_s": "1.5223",
+      "retrieval_s": "0.0011",
+      "reranking_s": "0.0002",
+      "generation_s": "0.0004",
+      "api_cost_usd": "0.0",
+      "answer": "A useful fallback is I don't know when retrieval confidence is too low or the retrieved context does not support an answer."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+run,question,total_latency_s,embedding_s,retrieval_s,reranking_s,generation_s,api_cost_usd,answer
+1,What is Retrieval-Augmented Generation?,1.3527,1.3432,0.0048,0.0022,0.0008,0.0,"Retrieval-Augmented Generation, or RAG, combines information retrieval with language-model generation."
+2,How does BM25 work in information retrieval?,1.4352,1.431,0.0007,0.0001,0.0005,0.0,Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit.
+3,What is FAISS used for?,1.7909,1.7882,0.0008,0.0003,0.0004,0.0,FAISS is a library for efficient similarity search over dense vectors.
+4,How does SentenceTransformer convert text?,1.749,1.7465,0.0006,0.0001,0.0004,0.0,Embeddings are dense numerical vectors that represent the meaning or characteristics of text.
+5,What is CrossEncoder reranking?,1.6526,1.6509,0.0004,0.0001,0.0002,0.0,"LLM-as-judge reranking can use richer instructions but is generally more expensive, slower, and potentially less deterministic."
+6,How does RAG combine retrieval and generation?,1.4789,1.4768,0.0007,0.0001,0.0001,0.0,RAG combines document retrieval with answer generation.
+7,What is a vector embedding?,1.7097,1.7034,0.0005,0.0001,0.0001,0.0,vector index stores embeddings and supports nearest-neighbor search.
+8,What programming language is used for AI and ML?,1.6173,1.6103,0.0007,0.0002,0.0002,0.0,"Python is a high-level programming language used for artificial intelligence, machine learning, and web development."
+9,How does hybrid retrieval improve search quality?,1.0662,1.0432,0.0033,0.0002,0.0037,0.0,Hybrid retrieval combines sparse and dense signals to improve candidate coverage.
+10,What is the role of dense retrieval in RAG?,1.5258,1.5223,0.0011,0.0002,0.0004,0.0,A useful fallback is I don't know when retrieval confidence is too low or the retrieved context does not support an answer.

@@ -1,0 +1,10 @@
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with answer generation.
+
+BM25 is a keyword-based ranking algorithm used in information retrieval.
+
+FAISS is a library for efficient similarity search over vector embeddings.
+
+SentenceTransformer converts text into dense vector embeddings.
+
+CrossEncoder reranking improves retrieval relevance by scoring question-document pairs.

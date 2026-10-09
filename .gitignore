@@ -1,0 +1,39 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+
+# Transient pipeline directories (preserve folder structure via .gitkeep)
+incoming/*
+!incoming/.gitkeep
+dead_letter/*
+!dead_letter/.gitkeep
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+git_path.txt

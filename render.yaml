@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: week7-rag-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: FAST_RERANK
+        value: "1"
+      - key: PYTHON_VERSION
+        value: "3.11.0"

@@ -1,0 +1,1662 @@
+=======================================================
+WEEK 7 DAY 5 — QUALITY EVALUATION
+=======================================================
+Loading embedding model...
+Loading reranking model...
+AI models loaded successfully!
+Creating FAISS index...
+FAISS index ready: 21 vectors
+Creating FAISS index...
+FAISS index ready: 21 vectors
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.3214 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0051 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0016 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.3287 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 1  score=1.000  A: Machine learning is a field of artificial intelligence in which computer systems
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.5666 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.5676 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 2  score=0.286  A: Machine learning is a field of artificial intelligence in which computer systems
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.3779 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0019 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.3807 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 3  score=0.182  A: Machine learning is a field of artificial intelligence in which computer systems
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 3.8869 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 3.8880 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 4  score=1.000  A: Classification predicts categories, while regression predicts continuous numeric
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.5291 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.5303 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 5  score=1.000  A: Classification predicts categories, while regression predicts continuous numeric
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.5171 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0022 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0033 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.5232 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 6  score=1.000  A: Training data is used to fit model parameters.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.1038 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.1045 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 7  score=0.500  A: A baseline is a simple reference method used to decide whether a more complex mo
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.7605 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0014 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.7623 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 8  score=1.000  A: Training data is used to fit model parameters.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.7638 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.7649 seconds
+Total API Cost: $0.000000
+=============================================
+  Q 9  score=0.250  A: Machine learning is a field of artificial intelligence in which computer systems
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.5857 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0028 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.5890 seconds
+Total API Cost: $0.000000
+=============================================
+  Q10  score=1.000  A: Regularization, simpler models, more data, and early stopping can reduce overfit
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.6741 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0027 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0022 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.6797 seconds
+Total API Cost: $0.000000
+=============================================
+  Q11  score=1.000  A: Underfitting occurs when a model is too simple to capture important patterns.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.8259 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.8267 seconds
+Total API Cost: $0.000000
+=============================================
+  Q12  score=1.000  A: Features are measurable input variables used by a model.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1750 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1759 seconds
+Total API Cost: $0.000000
+=============================================
+  Q13  score=1.000  A: Labels are target outputs in supervised learning.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1687 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1696 seconds
+Total API Cost: $0.000000
+=============================================
+  Q14  score=0.750  A: Accuracy is the fraction of correct predictions, while precision and recall are 
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.7126 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.7136 seconds
+Total API Cost: $0.000000
+=============================================
+  Q15  score=1.000  A: Cross-validation repeatedly changes the train-validation split to estimate perfo
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.4970 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.4978 seconds
+Total API Cost: $0.000000
+=============================================
+  Q16  score=1.000  A: Embeddings are dense numerical vectors that represent the meaning or characteris
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.4152 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0014 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.4173 seconds
+Total API Cost: $0.000000
+=============================================
+  Q17  score=1.000  A: A sentence embedding maps a sentence or passage to a fixed-length vector.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.6188 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0069 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.6265 seconds
+Total API Cost: $0.000000
+=============================================
+  Q18  score=0.385  A: Inner product is not automatically cosine similarity.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.5387 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0014 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.5410 seconds
+Total API Cost: $0.000000
+=============================================
+  Q19  score=0.385  A: Inner product is not automatically cosine similarity.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0427 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0433 seconds
+Total API Cost: $0.000000
+=============================================
+  Q20  score=1.000  A: Euclidean or L2 distance measures geometric distance, so smaller values mean clo
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0322 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0326 seconds
+Total API Cost: $0.000000
+=============================================
+  Q21  score=0.062  A: Cross-encoders are usually more accurate than bi-encoder retrieval but slower be
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0336 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0348 seconds
+Total API Cost: $0.000000
+=============================================
+  Q22  score=1.000  A: Dense retrieval can match synonyms and related concepts even when the exact quer
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0389 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0392 seconds
+Total API Cost: $0.000000
+=============================================
+  Q23  score=0.000  A: vector index stores embeddings and supports nearest-neighbor search.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0374 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0378 seconds
+Total API Cost: $0.000000
+=============================================
+  Q24  score=0.900  A: vector index stores embeddings and supports nearest-neighbor search.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0248 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0252 seconds
+Total API Cost: $0.000000
+=============================================
+  Q25  score=0.500  A: RAG combines document retrieval with answer generation.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0182 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0186 seconds
+Total API Cost: $0.000000
+=============================================
+  Q26  score=0.069  A: RAG combines document retrieval with answer generation.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0260 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0269 seconds
+Total API Cost: $0.000000
+=============================================
+  Q27  score=1.000  A: Retrieval should be evaluated before generation because a generator cannot relia
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0214 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0217 seconds
+Total API Cost: $0.000000
+=============================================
+  Q28  score=1.000  A: Source citations improve traceability by showing which document or chunk support
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0241 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0245 seconds
+Total API Cost: $0.000000
+=============================================
+  Q29  score=0.091  A: RAG combines document retrieval with answer generation.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0223 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0231 seconds
+Total API Cost: $0.000000
+=============================================
+  Q30  score=0.500  A: BM25 is a sparse lexical ranking algorithm based on term frequency, inverse docu
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0243 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0249 seconds
+Total API Cost: $0.000000
+=============================================
+  Q31  score=0.400  A: Hybrid retrieval can combine BM25 and dense retrieval.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0208 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0213 seconds
+Total API Cost: $0.000000
+=============================================
+  Q32  score=0.364  A: Hybrid retrieval can combine BM25 and dense retrieval.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0222 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0225 seconds
+Total API Cost: $0.000000
+=============================================
+  Q33  score=0.250  A: LLM-as-judge reranking can use richer instructions but is generally more expensi
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0176 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0000 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0180 seconds
+Total API Cost: $0.000000
+=============================================
+  Q34  score=0.417  A: A reranker receives a smaller candidate list and scores query-passage pairs more
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0170 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0175 seconds
+Total API Cost: $0.000000
+=============================================
+  Q35  score=1.000  A: FAISS is a library for efficient similarity search over dense vectors.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0175 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0183 seconds
+Total API Cost: $0.000000
+=============================================
+  Q36  score=1.000  A: IndexFlatL2 performs exact search using squared Euclidean distance, where lower 
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.0934 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.0945 seconds
+Total API Cost: $0.000000
+=============================================
+  Q37  score=1.000  A: IndexFlatIP performs exact maximum inner-product search, where higher score is b
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1138 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1148 seconds
+Total API Cost: $0.000000
+=============================================
+  Q38  score=1.000  A: Inner product is not automatically cosine similarity.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1608 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1619 seconds
+Total API Cost: $0.000000
+=============================================
+  Q39  score=1.000  A: To perform cosine similarity with an inner-product FAISS index, normalize both d
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.0857 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0040 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.0909 seconds
+Total API Cost: $0.000000
+=============================================
+  Q40  score=0.059  A: and dense scores to share the same scale.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.9600 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0156 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0071 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.9830 seconds
+Total API Cost: $0.000000
+=============================================
+  Q41  score=1.000  A: Flat indexes are exhaustive and useful for small corpora and correctness checks.
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 2.8595 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0014 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 2.8613 seconds
+Total API Cost: $0.000000
+=============================================
+  Q42  score=1.000  A: Approximate indexes such as IVF or HNSW trade some recall for speed and scalabil
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.5630 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.5640 seconds
+Total API Cost: $0.000000
+=============================================
+  Q43  score=1.000  A: Semantic-break chunking tries to split near topic or paragraph boundaries so eac
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.2545 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.2555 seconds
+Total API Cost: $0.000000
+=============================================
+  Q44  score=0.118  A: A sliding-window strategy uses a fixed chunk size and overlap; overlap protects 
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1644 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0010 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1659 seconds
+Total API Cost: $0.000000
+=============================================
+  Q45  score=1.000  A: Semantic-break chunking tries to split near topic or paragraph boundaries so eac
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1945 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1953 seconds
+Total API Cost: $0.000000
+=============================================
+  Q46  score=1.000  A: BM25 is a sparse lexical ranking algorithm based on term frequency, inverse docu
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.2251 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.2261 seconds
+Total API Cost: $0.000000
+=============================================
+  Q47  score=1.000  A: Term frequency rewards repeated query terms but BM25 saturates that reward so re
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.1898 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0013 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.1918 seconds
+Total API Cost: $0.000000
+=============================================
+  Q48  score=1.000  A: Term frequency rewards repeated query terms but BM25 saturates that reward so re
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.3094 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.3102 seconds
+Total API Cost: $0.000000
+=============================================
+  Q49  score=0.130  A: Retrieval evaluation can use Hit Rate at k, Mean Reciprocal Rank, precision, rec
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 0.7933 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 0.7944 seconds
+Total API Cost: $0.000000
+=============================================
+  Q50  score=0.000  A: LLM-as-judge reranking can use richer instructions but is generally more expensi
+
+=======================================================
+Mode          : normal
+Questions     : 50
+Mean score    : 0.6919
+Threshold     : 0.4000
+RESULT        : PASSED
+=======================================================
+Report saved -> C:\Users\ridaj\Week7_RAG_API\Week7_Submission\Day5\quality_report.json
+2026-10-09 12:40:25,986 - INFO - No device provided, using cpu
+2026-10-09 12:40:28,495 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-09 12:40:28,497 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-09 12:40:28,542 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:28,814 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:28,862 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:28,865 - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-10-09 12:40:29,122 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:29,167 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:29,422 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:29,468 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:29,730 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:29,775 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:30,034 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:30,079 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:30,337 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:30,634 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:30,913 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 4749.49it/s]
+2026-10-09 12:40:32,906 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:33,444 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:33,707 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-09 12:40:34,237 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:34,281 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22d1514c3162bbe87b343f565fadc62e6c06f04f03%22 "HTTP/1.1 200 OK"
+2026-10-09 12:40:34,541 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:34,808 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:34,822 - INFO - No device provided, using cpu
+2026-10-09 12:40:35,084 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:35,353 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:35,356 - INFO - No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+2026-10-09 12:40:35,610 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:35,868 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:36,122 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:36,383 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:36,654 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:36,914 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:37,182 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:37,438 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:37,712 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:37,972 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]
+Loading weights:  30%|###       | 32/105 [00:00<00:00, 268.92it/s]
+Loading weights: 100%|##########| 105/105 [00:00<00:00, 649.43it/s]
+2026-10-09 12:40:39,346 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:39,629 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:40:39,924 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:40,177 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-09 12:40:40,431 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:40:40,694 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:11<00:00, 11.98s/it]
+Batches: 100%|##########| 1/1 [00:11<00:00, 11.98s/it]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:10<00:00, 10.60s/it]
+Batches: 100%|##########| 1/1 [00:10<00:00, 10.60s/it]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.31s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.31s/it]
+2026-10-09 12:41:06,004 - INFO - Embedding | Time: 2.3214s | Cost: $0.000000
+2026-10-09 12:41:06,009 - INFO - Retrieval | Time: 0.0051s | Cost: $0.000000
+2026-10-09 12:41:06,011 - INFO - Reranking | Time: 0.0016s | Cost: $0.000000
+2026-10-09 12:41:06,012 - INFO - Generation | Time: 0.0006s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.56s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.56s/it]
+2026-10-09 12:41:08,579 - INFO - Embedding | Time: 2.5666s | Cost: $0.000000
+2026-10-09 12:41:08,580 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:08,580 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:08,581 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.35s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.35s/it]
+2026-10-09 12:41:10,959 - INFO - Embedding | Time: 2.3779s | Cost: $0.000000
+2026-10-09 12:41:10,962 - INFO - Retrieval | Time: 0.0019s | Cost: $0.000000
+2026-10-09 12:41:10,968 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:10,969 - INFO - Generation | Time: 0.0008s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:03<00:00,  3.88s/it]
+Batches: 100%|##########| 1/1 [00:03<00:00,  3.88s/it]
+2026-10-09 12:41:14,888 - INFO - Embedding | Time: 3.8869s | Cost: $0.000000
+2026-10-09 12:41:14,889 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:14,890 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:14,890 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.52s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.52s/it]
+2026-10-09 12:41:17,420 - INFO - Embedding | Time: 2.5291s | Cost: $0.000000
+2026-10-09 12:41:17,421 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:41:17,421 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:17,422 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.50s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.50s/it]
+2026-10-09 12:41:19,939 - INFO - Embedding | Time: 2.5171s | Cost: $0.000000
+2026-10-09 12:41:19,941 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:19,944 - INFO - Reranking | Time: 0.0022s | Cost: $0.000000
+2026-10-09 12:41:19,949 - INFO - Generation | Time: 0.0033s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.06s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.07s/it]
+2026-10-09 12:41:22,060 - INFO - Embedding | Time: 2.1038s | Cost: $0.000000
+2026-10-09 12:41:22,061 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:22,061 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:22,062 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.33it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.33it/s]
+2026-10-09 12:41:22,823 - INFO - Embedding | Time: 0.7605s | Cost: $0.000000
+2026-10-09 12:41:22,826 - INFO - Retrieval | Time: 0.0014s | Cost: $0.000000
+2026-10-09 12:41:22,827 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:22,827 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.34it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.33it/s]
+2026-10-09 12:41:23,591 - INFO - Embedding | Time: 0.7638s | Cost: $0.000000
+2026-10-09 12:41:23,592 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:23,593 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:23,593 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.80it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.75it/s]
+2026-10-09 12:41:24,180 - INFO - Embedding | Time: 0.5857s | Cost: $0.000000
+2026-10-09 12:41:24,183 - INFO - Retrieval | Time: 0.0028s | Cost: $0.000000
+2026-10-09 12:41:24,184 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:24,186 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.65s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.65s/it]
+2026-10-09 12:41:25,861 - INFO - Embedding | Time: 1.6741s | Cost: $0.000000
+2026-10-09 12:41:25,868 - INFO - Retrieval | Time: 0.0027s | Cost: $0.000000
+2026-10-09 12:41:25,871 - INFO - Reranking | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:41:25,875 - INFO - Generation | Time: 0.0022s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.81s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.81s/it]
+2026-10-09 12:41:27,704 - INFO - Embedding | Time: 1.8259s | Cost: $0.000000
+2026-10-09 12:41:27,704 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:27,705 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:27,705 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.16it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.15it/s]
+2026-10-09 12:41:27,881 - INFO - Embedding | Time: 0.1750s | Cost: $0.000000
+2026-10-09 12:41:27,883 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:27,883 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:27,884 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.26it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.24it/s]
+2026-10-09 12:41:28,053 - INFO - Embedding | Time: 0.1687s | Cost: $0.000000
+2026-10-09 12:41:28,054 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:28,054 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:28,054 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.44it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.44it/s]
+2026-10-09 12:41:28,768 - INFO - Embedding | Time: 0.7126s | Cost: $0.000000
+2026-10-09 12:41:28,769 - INFO - Retrieval | Time: 0.0008s | Cost: $0.000000
+2026-10-09 12:41:28,769 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:28,769 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  2.08it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  2.08it/s]
+2026-10-09 12:41:29,267 - INFO - Embedding | Time: 0.4970s | Cost: $0.000000
+2026-10-09 12:41:29,268 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:29,268 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:29,269 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  2.50it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  2.49it/s]
+2026-10-09 12:41:29,686 - INFO - Embedding | Time: 0.4152s | Cost: $0.000000
+2026-10-09 12:41:29,687 - INFO - Retrieval | Time: 0.0014s | Cost: $0.000000
+2026-10-09 12:41:29,688 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:29,689 - INFO - Generation | Time: 0.0006s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.65it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.65it/s]
+2026-10-09 12:41:30,309 - INFO - Embedding | Time: 0.6188s | Cost: $0.000000
+2026-10-09 12:41:30,316 - INFO - Retrieval | Time: 0.0069s | Cost: $0.000000
+2026-10-09 12:41:30,317 - INFO - Reranking | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:30,318 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.91it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.91it/s]
+2026-10-09 12:41:30,858 - INFO - Embedding | Time: 0.5387s | Cost: $0.000000
+2026-10-09 12:41:30,859 - INFO - Retrieval | Time: 0.0008s | Cost: $0.000000
+2026-10-09 12:41:30,859 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:30,861 - INFO - Generation | Time: 0.0014s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 31.22it/s]
+2026-10-09 12:41:30,905 - INFO - Embedding | Time: 0.0427s | Cost: $0.000000
+2026-10-09 12:41:30,906 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:30,906 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:30,906 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 39.75it/s]
+2026-10-09 12:41:30,939 - INFO - Embedding | Time: 0.0322s | Cost: $0.000000
+2026-10-09 12:41:30,939 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:30,940 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:30,940 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 38.90it/s]
+2026-10-09 12:41:30,974 - INFO - Embedding | Time: 0.0336s | Cost: $0.000000
+2026-10-09 12:41:30,975 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:41:30,975 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:30,976 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 30.90it/s]
+2026-10-09 12:41:31,017 - INFO - Embedding | Time: 0.0389s | Cost: $0.000000
+2026-10-09 12:41:31,017 - INFO - Retrieval | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:31,017 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,017 - INFO - Generation | Time: 0.0000s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 32.41it/s]
+2026-10-09 12:41:31,055 - INFO - Embedding | Time: 0.0374s | Cost: $0.000000
+2026-10-09 12:41:31,055 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:31,056 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,056 - INFO - Generation | Time: 0.0000s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 50.17it/s]
+2026-10-09 12:41:31,081 - INFO - Embedding | Time: 0.0248s | Cost: $0.000000
+2026-10-09 12:41:31,081 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:31,082 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,082 - INFO - Generation | Time: 0.0000s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 66.67it/s]
+2026-10-09 12:41:31,100 - INFO - Embedding | Time: 0.0182s | Cost: $0.000000
+2026-10-09 12:41:31,101 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:31,101 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,101 - INFO - Generation | Time: 0.0000s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 44.73it/s]
+2026-10-09 12:41:31,128 - INFO - Embedding | Time: 0.0260s | Cost: $0.000000
+2026-10-09 12:41:31,128 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:31,129 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,129 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 63.00it/s]
+2026-10-09 12:41:31,151 - INFO - Embedding | Time: 0.0214s | Cost: $0.000000
+2026-10-09 12:41:31,151 - INFO - Retrieval | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:31,151 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,152 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 50.32it/s]
+2026-10-09 12:41:31,176 - INFO - Embedding | Time: 0.0241s | Cost: $0.000000
+2026-10-09 12:41:31,177 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:31,177 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,177 - INFO - Generation | Time: 0.0000s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 52.99it/s]
+2026-10-09 12:41:31,199 - INFO - Embedding | Time: 0.0223s | Cost: $0.000000
+2026-10-09 12:41:31,200 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:31,200 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,201 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 55.63it/s]
+2026-10-09 12:41:31,226 - INFO - Embedding | Time: 0.0243s | Cost: $0.000000
+2026-10-09 12:41:31,226 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:31,226 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,227 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 57.01it/s]
+2026-10-09 12:41:31,248 - INFO - Embedding | Time: 0.0208s | Cost: $0.000000
+2026-10-09 12:41:31,248 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:31,248 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,249 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 54.22it/s]
+2026-10-09 12:41:31,271 - INFO - Embedding | Time: 0.0222s | Cost: $0.000000
+2026-10-09 12:41:31,272 - INFO - Retrieval | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:31,272 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,272 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 69.30it/s]
+2026-10-09 12:41:31,290 - INFO - Embedding | Time: 0.0176s | Cost: $0.000000
+2026-10-09 12:41:31,290 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:31,290 - INFO - Reranking | Time: 0.0000s | Cost: $0.000000
+2026-10-09 12:41:31,291 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 73.46it/s]
+2026-10-09 12:41:31,308 - INFO - Embedding | Time: 0.0170s | Cost: $0.000000
+2026-10-09 12:41:31,308 - INFO - Retrieval | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:31,308 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,309 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 70.01it/s]
+2026-10-09 12:41:31,327 - INFO - Embedding | Time: 0.0175s | Cost: $0.000000
+2026-10-09 12:41:31,327 - INFO - Retrieval | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:31,327 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:31,328 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.91s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.91s/it]
+2026-10-09 12:41:33,422 - INFO - Embedding | Time: 2.0934s | Cost: $0.000000
+2026-10-09 12:41:33,423 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:33,423 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:33,424 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  9.84it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  9.81it/s]
+2026-10-09 12:41:33,539 - INFO - Embedding | Time: 0.1138s | Cost: $0.000000
+2026-10-09 12:41:33,540 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:33,540 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:33,541 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.69it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.67it/s]
+2026-10-09 12:41:33,702 - INFO - Embedding | Time: 0.1608s | Cost: $0.000000
+2026-10-09 12:41:33,703 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:41:33,703 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:33,704 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00, 13.65it/s]
+2026-10-09 12:41:33,790 - INFO - Embedding | Time: 0.0857s | Cost: $0.000000
+2026-10-09 12:41:33,791 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:41:33,795 - INFO - Reranking | Time: 0.0040s | Cost: $0.000000
+2026-10-09 12:41:33,796 - INFO - Generation | Time: 0.0005s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.95s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.95s/it]
+2026-10-09 12:41:36,757 - INFO - Embedding | Time: 2.9600s | Cost: $0.000000
+2026-10-09 12:41:36,788 - INFO - Retrieval | Time: 0.0156s | Cost: $0.000000
+2026-10-09 12:41:36,790 - INFO - Reranking | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:41:36,798 - INFO - Generation | Time: 0.0071s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.53s/it]
+Batches: 100%|##########| 1/1 [00:02<00:00,  2.53s/it]
+2026-10-09 12:41:39,661 - INFO - Embedding | Time: 2.8595s | Cost: $0.000000
+2026-10-09 12:41:39,663 - INFO - Retrieval | Time: 0.0014s | Cost: $0.000000
+2026-10-09 12:41:39,663 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:39,663 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.80it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.80it/s]
+2026-10-09 12:41:40,227 - INFO - Embedding | Time: 0.5630s | Cost: $0.000000
+2026-10-09 12:41:40,228 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:40,228 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:40,229 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  4.02it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  4.01it/s]
+2026-10-09 12:41:40,484 - INFO - Embedding | Time: 0.2545s | Cost: $0.000000
+2026-10-09 12:41:40,484 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:40,485 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:40,485 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.54it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  6.52it/s]
+2026-10-09 12:41:40,650 - INFO - Embedding | Time: 0.1644s | Cost: $0.000000
+2026-10-09 12:41:40,652 - INFO - Retrieval | Time: 0.0010s | Cost: $0.000000
+2026-10-09 12:41:40,652 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:40,652 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  5.60it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  5.59it/s]
+2026-10-09 12:41:40,848 - INFO - Embedding | Time: 0.1945s | Cost: $0.000000
+2026-10-09 12:41:40,849 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:41:40,849 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:40,849 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  4.98it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  4.93it/s]
+2026-10-09 12:41:41,075 - INFO - Embedding | Time: 0.2251s | Cost: $0.000000
+2026-10-09 12:41:41,076 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:41:41,076 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:41,077 - INFO - Generation | Time: 0.0003s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  5.51it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  5.49it/s]
+2026-10-09 12:41:41,267 - INFO - Embedding | Time: 0.1898s | Cost: $0.000000
+2026-10-09 12:41:41,271 - INFO - Retrieval | Time: 0.0013s | Cost: $0.000000
+2026-10-09 12:41:41,272 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:41:41,272 - INFO - Generation | Time: 0.0005s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  3.52it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  3.52it/s]
+2026-10-09 12:41:41,582 - INFO - Embedding | Time: 0.3094s | Cost: $0.000000
+2026-10-09 12:41:41,583 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:41:41,583 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:41,584 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.31it/s]
+Batches: 100%|##########| 1/1 [00:00<00:00,  1.31it/s]
+2026-10-09 12:41:42,379 - INFO - Embedding | Time: 0.7933s | Cost: $0.000000
+2026-10-09 12:41:42,380 - INFO - Retrieval | Time: 0.0008s | Cost: $0.000000
+2026-10-09 12:41:42,380 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:41:42,381 - INFO - Generation | Time: 0.0002s | Cost: $0.000000

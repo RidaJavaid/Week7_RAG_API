@@ -1,0 +1,24 @@
+============================= test session starts =============================
+collecting ... collected 19 items
+
+tests/test_ingestion_day3.py::test_same_document_three_times_mandatory PASSED [  5%]
+tests/test_ingestion_day3.py::test_different_content_gets_indexed_separately PASSED [ 10%]
+tests/test_ingestion_day3.py::test_empty_content_raises_value_error PASSED [ 15%]
+tests/test_ingestion_day3.py::test_whitespace_only_raises_value_error PASSED [ 21%]
+tests/test_ingestion_day3.py::test_hash_is_sha256 PASSED                 [ 26%]
+tests/test_ingestion_day3.py::test_registry_persists_across_calls PASSED [ 31%]
+tests/test_cost_tracker.py::test_basic_tracking PASSED                   [ 36%]
+tests/test_cost_tracker.py::test_multiple_steps PASSED                   [ 42%]
+tests/test_cost_tracker.py::test_cost_accumulation PASSED                [ 47%]
+tests/test_cost_tracker.py::test_negative_cost_raises PASSED             [ 52%]
+tests/test_cost_tracker.py::test_cost_budget_exceeded_raises PASSED      [ 57%]
+tests/test_cost_tracker.py::test_get_report_structure PASSED             [ 63%]
+tests/test_cost_tracker.py::test_zero_cost_steps PASSED                  [ 68%]
+tests/test_cost_tracker.py::test_step_time_recorded_accurately PASSED    [ 73%]
+tests/test_cost_tracker.py::test_total_time_in_report PASSED             [ 78%]
+tests/test_auto_ingest.py::test_A_same_document_three_times PASSED       [ 84%]
+tests/test_auto_ingest.py::test_B_invalid_document_dead_letter PASSED    [ 89%]
+tests/test_auto_ingest.py::test_C_slack_notification_live SKIPPED (P...) [ 94%]
+tests/test_auto_ingest.py::test_C_notification_without_webhook_logs PASSED [100%]
+
+================== 18 passed, 1 skipped in 214.31s (0:03:34) ==================

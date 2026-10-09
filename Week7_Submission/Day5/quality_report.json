@@ -1,0 +1,359 @@
+{
+  "mode": "normal",
+  "num_questions": 50,
+  "mean_score": 0.6919,
+  "threshold": 0.4,
+  "passed": true,
+  "results": [
+    {
+      "id": 1,
+      "question": "What is machine learning?",
+      "reference": "Machine learning is a field of artificial intelligence in which computer systems learn patterns from data instead of relying only on hand-written rules.",
+      "answer": "Machine learning is a field of artificial intelligence in which computer systems learn patterns from data instead of relying only on hand-written rules.",
+      "score": 1.0
+    },
+    {
+      "id": 2,
+      "question": "What is supervised learning?",
+      "reference": "Labels are target outputs in supervised learning.",
+      "answer": "Machine learning is a field of artificial intelligence in which computer systems learn patterns from data instead of relying only on hand-written rules.",
+      "score": 0.2857
+    },
+    {
+      "id": 3,
+      "question": "What is unsupervised learning?",
+      "reference": "Unsupervised learning works with unlabeled data and includes clustering and dimensionality reduction.",
+      "answer": "Machine learning is a field of artificial intelligence in which computer systems learn patterns from data instead of relying only on hand-written rules.",
+      "score": 0.1818
+    },
+    {
+      "id": 4,
+      "question": "What does classification predict?",
+      "reference": "Classification predicts categories, while regression predicts continuous numeric values.",
+      "answer": "Classification predicts categories, while regression predicts continuous numeric values.",
+      "score": 1.0
+    },
+    {
+      "id": 5,
+      "question": "What does regression predict?",
+      "reference": "Classification predicts categories, while regression predicts continuous numeric values.",
+      "answer": "Classification predicts categories, while regression predicts continuous numeric values.",
+      "score": 1.0
+    },
+    {
+      "id": 6,
+      "question": "What is training data used for?",
+      "reference": "Training data is used to fit model parameters.",
+      "answer": "Training data is used to fit model parameters.",
+      "score": 1.0
+    },
+    {
+      "id": 7,
+      "question": "What is validation data used for?",
+      "reference": "Training data is used to fit model parameters.",
+      "answer": "A baseline is a simple reference method used to decide whether a more complex model actually helps.",
+      "score": 0.5
+    },
+    {
+      "id": 8,
+      "question": "What is test data used for?",
+      "reference": "Training data is used to fit model parameters.",
+      "answer": "Training data is used to fit model parameters.",
+      "score": 1.0
+    },
+    {
+      "id": 9,
+      "question": "What is overfitting?",
+      "reference": "Training data is used to fit model parameters.",
+      "answer": "Machine learning is a field of artificial intelligence in which computer systems learn patterns from data instead of relying only on hand-written rules.",
+      "score": 0.25
+    },
+    {
+      "id": 10,
+      "question": "How can overfitting be reduced?",
+      "reference": "Regularization, simpler models, more data, and early stopping can reduce overfitting.",
+      "answer": "Regularization, simpler models, more data, and early stopping can reduce overfitting.",
+      "score": 1.0
+    },
+    {
+      "id": 11,
+      "question": "What is underfitting?",
+      "reference": "Underfitting occurs when a model is too simple to capture important patterns.",
+      "answer": "Underfitting occurs when a model is too simple to capture important patterns.",
+      "score": 1.0
+    },
+    {
+      "id": 12,
+      "question": "What are features?",
+      "reference": "Features are measurable input variables used by a model.",
+      "answer": "Features are measurable input variables used by a model.",
+      "score": 1.0
+    },
+    {
+      "id": 13,
+      "question": "What are labels?",
+      "reference": "Labels are target outputs in supervised learning.",
+      "answer": "Labels are target outputs in supervised learning.",
+      "score": 1.0
+    },
+    {
+      "id": 14,
+      "question": "What is accuracy?",
+      "reference": "Accuracy is the fraction of correct predictions, while precision and recall are useful when class balance or error types matter.",
+      "answer": "Accuracy is the fraction of correct predictions, while precision and recall are useful when class",
+      "score": 0.75
+    },
+    {
+      "id": 15,
+      "question": "Why use cross-validation?",
+      "reference": "Cross-validation repeatedly changes the train-validation split to estimate performance more robustly.",
+      "answer": "Cross-validation repeatedly changes the train-validation split to estimate performance more robustly.",
+      "score": 1.0
+    },
+    {
+      "id": 16,
+      "question": "What are embeddings?",
+      "reference": "Embeddings are dense numerical vectors that represent the meaning or characteristics of text.",
+      "answer": "Embeddings are dense numerical vectors that represent the meaning or characteristics of text.",
+      "score": 1.0
+    },
+    {
+      "id": 17,
+      "question": "What is a sentence embedding?",
+      "reference": "A sentence embedding maps a sentence or passage to a fixed-length vector.",
+      "answer": "A sentence embedding maps a sentence or passage to a fixed-length vector.",
+      "score": 1.0
+    },
+    {
+      "id": 18,
+      "question": "What does cosine similarity compare?",
+      "reference": "Vector normalization is important when cosine similarity is implemented using an inner-product index.",
+      "answer": "Inner product is not automatically cosine similarity.",
+      "score": 0.3846
+    },
+    {
+      "id": 19,
+      "question": "When does inner product equal cosine similarity?",
+      "reference": "Vector normalization is important when cosine similarity is implemented using an inner-product index.",
+      "answer": "Inner product is not automatically cosine similarity.",
+      "score": 0.3846
+    },
+    {
+      "id": 20,
+      "question": "What does L2 distance measure?",
+      "reference": "Euclidean or L2 distance measures geometric distance, so smaller values mean closer vectors.",
+      "answer": "Euclidean or L2 distance measures geometric distance, so smaller values mean closer vectors.",
+      "score": 1.0
+    },
+    {
+      "id": 21,
+      "question": "What is a bi-encoder?",
+      "reference": "Inner product is a dot product; when both vectors are normalized to unit length, inner product equals cosine similarity.",
+      "answer": "Cross-encoders are usually more accurate than bi-encoder retrieval but slower because every query-candidate pair must be processed jointly.",
+      "score": 0.0625
+    },
+    {
+      "id": 22,
+      "question": "Why is dense retrieval useful for synonyms?",
+      "reference": "Dense retrieval can match synonyms and related concepts even when the exact query words are absent.",
+      "answer": "Dense retrieval can match synonyms and related concepts even when the exact query words are absent.",
+      "score": 1.0
+    },
+    {
+      "id": 23,
+      "question": "Why normalize vectors?",
+      "reference": "Euclidean or L2 distance measures geometric distance, so smaller values mean closer vectors.",
+      "answer": "vector index stores embeddings and supports nearest-neighbor search.",
+      "score": 0.0
+    },
+    {
+      "id": 24,
+      "question": "What is a vector index?",
+      "reference": "A vector index stores embeddings and supports nearest-neighbor search.",
+      "answer": "vector index stores embeddings and supports nearest-neighbor search.",
+      "score": 0.9
+    },
+    {
+      "id": 25,
+      "question": "What is RAG?",
+      "reference": "Retrieval-Augmented Generation, or RAG, combines information retrieval with language-model generation.",
+      "answer": "RAG combines document retrieval with answer generation.",
+      "score": 0.5
+    },
+    {
+      "id": 26,
+      "question": "What are the main RAG pipeline stages?",
+      "reference": "A typical RAG pipeline loads source documents, splits them into chunks, indexes those chunks, retrieves evidence for a user question, and then asks a language model to answer using the retrieved context.",
+      "answer": "RAG combines document retrieval with answer generation.",
+      "score": 0.069
+    },
+    {
+      "id": 27,
+      "question": "Why evaluate retrieval before generation?",
+      "reference": "Retrieval should be evaluated before generation because a generator cannot reliably use evidence that was never retrieved.",
+      "answer": "Retrieval should be evaluated before generation because a generator cannot reliably use evidence that was never retrieved.",
+      "score": 1.0
+    },
+    {
+      "id": 28,
+      "question": "Why are source citations useful?",
+      "reference": "Source citations improve traceability by showing which document or chunk supported an answer.",
+      "answer": "Source citations improve traceability by showing which document or chunk supported an answer.",
+      "score": 1.0
+    },
+    {
+      "id": 29,
+      "question": "When should a RAG system say I don't know?",
+      "reference": "A useful fallback is I don't know when retrieval confidence is too low or the retrieved context does not support an answer.",
+      "answer": "RAG combines document retrieval with answer generation.",
+      "score": 0.0909
+    },
+    {
+      "id": 30,
+      "question": "What is sparse retrieval?",
+      "reference": "Sparse retrieval such as BM25 focuses on lexical term evidence.",
+      "answer": "BM25 is a sparse lexical ranking algorithm based on term frequency, inverse document frequency, and document-length normalization.",
+      "score": 0.5
+    },
+    {
+      "id": 31,
+      "question": "What is dense retrieval?",
+      "reference": "Dense retrieval uses semantic embeddings.",
+      "answer": "Hybrid retrieval can combine BM25 and dense retrieval.",
+      "score": 0.4
+    },
+    {
+      "id": 32,
+      "question": "What is hybrid retrieval?",
+      "reference": "Hybrid retrieval combines sparse and dense signals to improve candidate coverage.",
+      "answer": "Hybrid retrieval can combine BM25 and dense retrieval.",
+      "score": 0.3636
+    },
+    {
+      "id": 33,
+      "question": "What is reranking?",
+      "reference": "Reranking applies a stronger but slower relevance model to a small candidate set.",
+      "answer": "LLM-as-judge reranking can use richer instructions but is generally more expensive, slower, and potentially less deterministic.",
+      "score": 0.25
+    },
+    {
+      "id": 34,
+      "question": "What does a CrossEncoder do?",
+      "reference": "A CrossEncoder jointly reads the query and candidate passage and outputs a relevance score.",
+      "answer": "A reranker receives a smaller candidate list and scores query-passage pairs more carefully.",
+      "score": 0.4167
+    },
+    {
+      "id": 35,
+      "question": "What is FAISS?",
+      "reference": "FAISS is a library for efficient similarity search over dense vectors.",
+      "answer": "FAISS is a library for efficient similarity search over dense vectors.",
+      "score": 1.0
+    },
+    {
+      "id": 36,
+      "question": "What does IndexFlatL2 use?",
+      "reference": "IndexFlatL2 performs exact search using squared Euclidean distance, where lower distance is better.",
+      "answer": "IndexFlatL2 performs exact search using squared Euclidean distance, where lower distance is better.",
+      "score": 1.0
+    },
+    {
+      "id": 37,
+      "question": "What does IndexFlatIP use?",
+      "reference": "IndexFlatIP performs exact maximum inner-product search, where higher score is better.",
+      "answer": "IndexFlatIP performs exact maximum inner-product search, where higher score is better.",
+      "score": 1.0
+    },
+    {
+      "id": 38,
+      "question": "Is inner product automatically cosine similarity?",
+      "reference": "Inner product is not automatically cosine similarity.",
+      "answer": "Inner product is not automatically cosine similarity.",
+      "score": 1.0
+    },
+    {
+      "id": 39,
+      "question": "How do you use cosine similarity with FAISS inner product?",
+      "reference": "To perform cosine similarity with an inner-product FAISS index, normalize both database vectors and query vectors to unit L2 length before indexing and searching.",
+      "answer": "To perform cosine similarity with an inner-product FAISS index, normalize both database vectors and query vectors to unit L2 length before indexing and searching.",
+      "score": 1.0
+    },
+    {
+      "id": 40,
+      "question": "How are normalized L2 and inner product rankings related?",
+      "reference": "For normalized vectors, squared L2 distance and inner product are monotonically related, so they produce equivalent rankings.",
+      "answer": "and dense scores to share the same scale.",
+      "score": 0.0588
+    },
+    {
+      "id": 41,
+      "question": "What are flat indexes?",
+      "reference": "Flat indexes are exhaustive and useful for small corpora and correctness checks.",
+      "answer": "Flat indexes are exhaustive and useful for small corpora and correctness checks.",
+      "score": 1.0
+    },
+    {
+      "id": 42,
+      "question": "Why use approximate indexes?",
+      "reference": "Approximate indexes such as IVF or HNSW trade some recall for speed and scalability on larger collections.",
+      "answer": "Approximate indexes such as IVF or HNSW trade some recall for speed and scalability on larger collections.",
+      "score": 1.0
+    },
+    {
+      "id": 43,
+      "question": "What is chunking?",
+      "reference": "Semantic-break chunking tries to split near topic or paragraph boundaries so each chunk is more coherent.",
+      "answer": "Semantic-break chunking tries to split near topic or paragraph boundaries so each chunk is more coherent.",
+      "score": 1.0
+    },
+    {
+      "id": 44,
+      "question": "What is sliding-window chunking?",
+      "reference": "Semantic-break chunking tries to split near topic or paragraph boundaries so each chunk is more coherent.",
+      "answer": "A sliding-window strategy uses a fixed chunk size and overlap; overlap protects context that crosses boundaries but also creates duplicated text.",
+      "score": 0.1176
+    },
+    {
+      "id": 45,
+      "question": "What is semantic-break chunking?",
+      "reference": "Semantic-break chunking tries to split near topic or paragraph boundaries so each chunk is more coherent.",
+      "answer": "Semantic-break chunking tries to split near topic or paragraph boundaries so each chunk is more coherent.",
+      "score": 1.0
+    },
+    {
+      "id": 46,
+      "question": "What is BM25?",
+      "reference": "BM25 is a sparse lexical ranking algorithm based on term frequency, inverse document frequency, and document-length normalization.",
+      "answer": "BM25 is a sparse lexical ranking algorithm based on term frequency, inverse document frequency, and document-length normalization.",
+      "score": 1.0
+    },
+    {
+      "id": 47,
+      "question": "What does IDF do in BM25?",
+      "reference": "Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit.",
+      "answer": "Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit.",
+      "score": 1.0
+    },
+    {
+      "id": 48,
+      "question": "What does k1 control in BM25?",
+      "reference": "Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit.",
+      "answer": "Term frequency rewards repeated query terms but BM25 saturates that reward so repetition does not grow without limit.",
+      "score": 1.0
+    },
+    {
+      "id": 49,
+      "question": "What is reciprocal rank fusion?",
+      "reference": "Reciprocal Rank Fusion, or RRF, combines ranked lists using reciprocal rank positions and does not require raw BM25 and dense scores to share the same scale.",
+      "answer": "Retrieval evaluation can use Hit Rate at k, Mean Reciprocal Rank, precision, recall, NDCG, and latency.",
+      "score": 0.1304
+    },
+    {
+      "id": 50,
+      "question": "What is MRR?",
+      "reference": "MRR rewards placing the first relevant result near the top.",
+      "answer": "LLM-as-judge reranking can use richer instructions but is generally more expensive, slower, and potentially less deterministic.",
+      "score": 0.0
+    }
+  ]
+}

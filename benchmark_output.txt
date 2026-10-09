@@ -1,0 +1,424 @@
+Loading embedding model...
+Loading reranking model...
+AI models loaded successfully!
+Creating FAISS index...
+FAISS index ready: 21 vectors
+=======================================================
+WEEK 7 DAY 1 — SPEED & COST BENCHMARK
+=======================================================
+Rebuilding index …
+Creating FAISS index...
+FAISS index ready: 21 vectors
+
+Run  1/10  Q: What is Retrieval-Augmented Generation?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.3432 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0048 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0022 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.3510 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.353s  Embed=1.343s  Retr=0.005s  Rerank=0.002s  Gen=0.001s
+
+Run  2/10  Q: How does BM25 work in information retrieval?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.4310 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.4323 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.435s  Embed=1.431s  Retr=0.001s  Rerank=0.000s  Gen=0.001s
+
+Run  3/10  Q: What is FAISS used for?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.7882 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0008 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0003 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.7897 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.791s  Embed=1.788s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+
+Run  4/10  Q: How does SentenceTransformer convert text?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.7465 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0006 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.7476 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.749s  Embed=1.746s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+
+Run  5/10  Q: What is CrossEncoder reranking?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.6509 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.6516 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.653s  Embed=1.651s  Retr=0.000s  Rerank=0.000s  Gen=0.000s
+
+Run  6/10  Q: How does RAG combine retrieval and generation?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.4768 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.4777 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.479s  Embed=1.477s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+
+Run  7/10  Q: What is a vector embedding?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.7034 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0005 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0001 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.7041 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.710s  Embed=1.703s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+
+Run  8/10  Q: What programming language is used for AI and ML?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.6103 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0007 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.6114 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.617s  Embed=1.610s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+
+Run  9/10  Q: How does hybrid retrieval improve search quality?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.0432 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0033 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0037 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.0504 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.066s  Embed=1.043s  Retr=0.003s  Rerank=0.000s  Gen=0.004s
+
+Run 10/10  Q: What is the role of dense retrieval in RAG?
+
+=============================================
+WEEK 7 - RAG COST & TIME REPORT
+=============================================
+Step: Embedding
+Time: 1.5223 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Retrieval
+Time: 0.0011 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Reranking
+Time: 0.0002 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Step: Generation
+Time: 0.0004 seconds
+Estimated API Cost: $0.000000
+-----------------------------------
+Total Step Time: 1.5240 seconds
+Total API Cost: $0.000000
+=============================================
+  Total=1.526s  Embed=1.522s  Retr=0.001s  Rerank=0.000s  Gen=0.000s
+2026-10-09 12:36:19,319 - INFO - No device provided, using cpu
+2026-10-09 12:36:22,705 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-09 12:36:22,707 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-10-09 12:36:27,186 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:27,442 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:27,488 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:27,490 - INFO - Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-10-09 12:36:27,770 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:27,815 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:28,964 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:29,010 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:29,266 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:29,311 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:29,571 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:29,617 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:29,874 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:36:30,254 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:36:30,536 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights:  91%|#########1| 94/103 [00:00<00:00, 939.05it/s]
+Loading weights: 100%|##########| 103/103 [00:00<00:00, 947.60it/s]
+2026-10-09 12:36:32,574 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:36:32,870 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-09 12:36:56,724 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-09 12:36:57,272 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:57,330 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22d1514c3162bbe87b343f565fadc62e6c06f04f03%22 "HTTP/1.1 200 OK"
+2026-10-09 12:36:57,591 - INFO - HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:36:57,945 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:36:57,960 - INFO - No device provided, using cpu
+2026-10-09 12:36:58,216 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:58,471 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:36:58,474 - INFO - No modules.json found for cross-encoder/ms-marco-MiniLM-L-6-v2, initializing a new CrossEncoder model.
+2026-10-09 12:36:58,727 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:58,980 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:36:59,244 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:36:59,517 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:36:59,801 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2/resolve/main/adapter_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:00,057 - INFO - HTTP Request: HEAD https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-10-09 12:37:00,317 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:00,572 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:37:00,843 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:01,104 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]
+Loading weights:  40%|####      | 42/105 [00:00<00:00, 419.10it/s]
+Loading weights: 100%|##########| 105/105 [00:00<00:00, 603.18it/s]
+2026-10-09 12:37:02,512 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2 "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:02,784 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-10-09 12:37:03,070 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:03,325 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-09 12:37:03,584 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L-6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-10-09 12:37:03,841 - INFO - HTTP Request: GET https://huggingface.co/api/models/cross-encoder/ms-marco-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:11<00:00, 11.86s/it]
+Batches: 100%|##########| 1/1 [00:11<00:00, 11.86s/it]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:13<00:00, 13.85s/it]
+Batches: 100%|##########| 1/1 [00:13<00:00, 13.87s/it]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.33s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.34s/it]
+2026-10-09 12:37:31,302 - INFO - Embedding | Time: 1.3432s | Cost: $0.000000
+2026-10-09 12:37:31,307 - INFO - Retrieval | Time: 0.0048s | Cost: $0.000000
+2026-10-09 12:37:31,310 - INFO - Reranking | Time: 0.0022s | Cost: $0.000000
+2026-10-09 12:37:31,311 - INFO - Generation | Time: 0.0008s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.42s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.42s/it]
+2026-10-09 12:37:32,744 - INFO - Embedding | Time: 1.4310s | Cost: $0.000000
+2026-10-09 12:37:32,745 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:37:32,746 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:37:32,746 - INFO - Generation | Time: 0.0005s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.78s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.78s/it]
+2026-10-09 12:37:34,535 - INFO - Embedding | Time: 1.7882s | Cost: $0.000000
+2026-10-09 12:37:34,537 - INFO - Retrieval | Time: 0.0008s | Cost: $0.000000
+2026-10-09 12:37:34,537 - INFO - Reranking | Time: 0.0003s | Cost: $0.000000
+2026-10-09 12:37:34,538 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.73s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.73s/it]
+2026-10-09 12:37:36,285 - INFO - Embedding | Time: 1.7465s | Cost: $0.000000
+2026-10-09 12:37:36,286 - INFO - Retrieval | Time: 0.0006s | Cost: $0.000000
+2026-10-09 12:37:36,286 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:37:36,287 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.63s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.63s/it]
+2026-10-09 12:37:37,938 - INFO - Embedding | Time: 1.6509s | Cost: $0.000000
+2026-10-09 12:37:37,939 - INFO - Retrieval | Time: 0.0004s | Cost: $0.000000
+2026-10-09 12:37:37,939 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:37:37,940 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.47s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.47s/it]
+2026-10-09 12:37:39,417 - INFO - Embedding | Time: 1.4768s | Cost: $0.000000
+2026-10-09 12:37:39,418 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:37:39,418 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:37:39,418 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.68s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.68s/it]
+2026-10-09 12:37:41,122 - INFO - Embedding | Time: 1.7034s | Cost: $0.000000
+2026-10-09 12:37:41,123 - INFO - Retrieval | Time: 0.0005s | Cost: $0.000000
+2026-10-09 12:37:41,123 - INFO - Reranking | Time: 0.0001s | Cost: $0.000000
+2026-10-09 12:37:41,127 - INFO - Generation | Time: 0.0001s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.60s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.60s/it]
+2026-10-09 12:37:42,739 - INFO - Embedding | Time: 1.6103s | Cost: $0.000000
+2026-10-09 12:37:42,742 - INFO - Retrieval | Time: 0.0007s | Cost: $0.000000
+2026-10-09 12:37:42,745 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:37:42,746 - INFO - Generation | Time: 0.0002s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.03s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.03s/it]
+2026-10-09 12:37:43,789 - INFO - Embedding | Time: 1.0432s | Cost: $0.000000
+2026-10-09 12:37:43,793 - INFO - Retrieval | Time: 0.0033s | Cost: $0.000000
+2026-10-09 12:37:43,794 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:37:43,811 - INFO - Generation | Time: 0.0037s | Cost: $0.000000
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.49s/it]
+Batches: 100%|##########| 1/1 [00:01<00:00,  1.50s/it]
+2026-10-09 12:37:45,335 - INFO - Embedding | Time: 1.5223s | Cost: $0.000000
+2026-10-09 12:37:45,336 - INFO - Retrieval | Time: 0.0011s | Cost: $0.000000
+2026-10-09 12:37:45,337 - INFO - Reranking | Time: 0.0002s | Cost: $0.000000
+2026-10-09 12:37:45,337 - INFO - Generation | Time: 0.0004s | Cost: $0.000000
+Traceback (most recent call last):
+  File "C:\Users\ridaj\Week7_RAG_API\run_benchmark.py", line 248, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ridaj\Week7_RAG_API\run_benchmark.py", line 109, in main
+    print(f"\nCSV saved \u2192 {csv_path}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ridaj\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 12: character maps to <undefined>
