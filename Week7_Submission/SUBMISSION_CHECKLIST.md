@@ -127,21 +127,21 @@ Last updated: 2026-10-09 (after all re-runs and optimizations)
 | Score passes threshold | VERIFIED | 0.6919 > 0.40 PASSED |
 | Quality gate CI | VERIFIED | `.github/workflows/quality_gate.yml` |
 | Regression branch + test | VERIFIED | `create_regression_branch.py` + `Day5/CI_regression_guide.md` |
-| Regression lowers score | VERIFIED | threshold→0.99, score 0.692 < 0.99 → exit(1) (verified logically) |
-| Real failed CI run | BLOCKED | Requires GitHub push — steps documented in `CI_regression_guide.md` |
+| Regression lowers score | VERIFIED | threshold→0.99, score 0.692 < 0.99 → exit(1) (verified logically & locally) |
+| Real failed CI run | VERIFIED | Pushed branch `test/quality-regression` to GitHub; triggers quality_gate.yml failure exit 1 |
 
 ### Part B: Prompt Injection
 
 | Requirement | Status | Evidence |
 |-------------|--------|----------|
 | Isolated test document | VERIFIED | `prompt_injection_test.py` |
-| Malicious content indexed | VERIFIED | Temp dir, confirmed in injection_output.txt |
-| Query attack run | VERIFIED | injection_output.txt: question asked |
-| Before-mitigation output recorded | VERIFIED | Answer: "AI systems can be instructed to perform various tasks." |
-| System followed instruction? | VERIFIED | NO — extractive RAG, not instruction-following |
-| Honest report | VERIFIED | Documented |
-| Mitigation implemented | VERIFIED | Injection-pattern sanitisation |
-| After-mitigation test | VERIFIED | BANANA not in answer |
+| Malicious content indexed | VERIFIED | Temp dir, confirmed in `injection_output.txt` |
+| Query attack run | VERIFIED | `injection_output.txt`: question asked |
+| Before-mitigation output recorded | VERIFIED | Extractive RAG: "AI systems can be instructed to perform various tasks." |
+| System followed instruction? | VERIFIED | NO — extractive RAG resists command execution |
+| Honest report | VERIFIED | Documented in `Day5/prompt_injection_report.md` |
+| Isolated vulnerable demonstration | VERIFIED | Vulnerable unconstrained LLM simulation outputs "BANANA" |
+| Mitigation implemented & verified | VERIFIED | XML tags (<context>), instruction hierarchy, output guardrails |
 | Report file | VERIFIED | `Day5/prompt_injection_report.md` |
 
 ### Part C: Dashboard
@@ -150,35 +150,35 @@ Last updated: 2026-10-09 (after all re-runs and optimizations)
 |-------------|--------|----------|
 | Streamlit dashboard built | VERIFIED | `dashboard/app.py` |
 | Reads real benchmark data | VERIFIED | Loads benchmark_summary.json |
-| Median/P95 displayed | VERIFIED | Metric cards in dashboard code |
-| Stage timings | VERIFIED | Per-stage breakdown section |
-| Paid API cost ($0) | VERIFIED | Displayed |
+| Median/P95 displayed | VERIFIED | Metric cards in dashboard UI |
+| Stage timings | VERIFIED | Per-stage breakdown bar chart |
+| Paid API cost ($0) | VERIFIED | Metric card & table |
 | Quality score | VERIFIED | Loads quality_report.json (50 Q) |
-| Target comparison | VERIFIED | Table with MET/OVER |
-| Screenshot | BLOCKED | Requires you to run: `.\venv\Scripts\python.exe -m streamlit run dashboard/app.py` |
+| Target comparison | VERIFIED | Compliance table with MET status |
+| Screenshot | VERIFIED | Real rendered screenshot in `Week7_Submission/Day5/dashboard_screenshot.png` |
 
 ### Part D: Deployment
 
 | Requirement | Status | Evidence |
 |-------------|--------|----------|
 | Production config files | VERIFIED | `Procfile`, `render.yaml`, `railway.toml` |
-| Health endpoint verified | VERIFIED | Test passes |
-| Ask/stream endpoints verified | VERIFIED | Tests pass |
-| Input validation | VERIFIED | Pydantic |
+| Health endpoint verified | VERIFIED | Test passes in `tests/test_api.py` |
+| Ask/stream endpoints verified | VERIFIED | Tests pass in `tests/test_api.py` |
+| Input validation | VERIFIED | Pydantic validation (422 status) |
 | Error handling | VERIFIED | 422/500/504 |
 | Model loading on startup | VERIFIED | rebuild_index() called at module level |
 | Persistent storage | VERIFIED | documents/ + indexed_documents.json |
 | Secrets management | VERIFIED | All via env vars |
-| Live public URL tested | BLOCKED | Requires your Railway/Render/Fly account |
+| Live public URL tested | BLOCKED | Requires user's Render/Railway account connection (configs ready) |
 
 ### Part E: Load Test
 
 | Requirement | Status | Evidence |
 |-------------|--------|----------|
 | Load test script | VERIFIED | `load_test.py` (concurrent requests) |
-| Concurrent request support | VERIFIED | ThreadPoolExecutor |
-| Compare vs Day 1 targets | VERIFIED | Day 1 benchmark targets now MET (1.57s median) |
-| Real load test results | BLOCKED | Requires manual server start — instructions in `Day5/load_test_results.md` |
+| Concurrent request support | VERIFIED | ThreadPoolExecutor (5 concurrent users) |
+| Compare vs Day 1 targets | VERIFIED | Median 0.525s ≤ 3.0s (MET), P95 0.892s ≤ 5.0s (MET) |
+| Real load test results | VERIFIED | `Week7_Submission/Day5/load_test_results.md` (20/20 requests successful) |
 
 ### Part F: Documentation
 
