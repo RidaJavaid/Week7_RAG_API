@@ -1,5 +1,11 @@
 # Cloud Deployment Technical Report — FastAPI RAG Service
 
+For the temporary GitHub Codespaces dashboard and FastAPI URLs, the owner-reported
+historical checks, and the latest reachability recheck, see
+[`Day5/deployment_status.md`](../Day5/deployment_status.md). The forwarded URLs
+returned HTTP 404 during the final submission verification; do not treat them as
+currently live.
+
 ## 1. Hosting Architecture & Service Specification
 
 The FastAPI RAG application is configured for deployment to **Render** as a cloud web service using native Infrastructure-as-Code (`render.yaml`) and Heroku-compatible `Procfile`.
@@ -71,7 +77,7 @@ Once activated on Render, the service exposes the following verified endpoints:
 * **Status**: **BLOCKED (Render Dashboard Requires Payment Method Verification)**
 * **Local Production Status**: **VERIFIED & OPERATIONAL** (Tested on local ASGI Uvicorn host; 20/20 API tests passed, 20/20 concurrent load tests passed, `/health` returns HTTP 200 OK).
 * **Blocker Root Cause**: Render enforces payment card verification even when selecting the Free tier ($0/mo) to prevent free-tier abuse. In accordance with strict project constraints, no credit card or paid plan has been authorized or entered.
-* **Production Configurations**: Native IaC Blueprint [`render.yaml`](file:///C:/Users/ridaj/Week7_RAG_API/render.yaml), [`Procfile`](file:///C:/Users/ridaj/Week7_RAG_API/Procfile), and [`railway.toml`](file:///C:/Users/ridaj/Week7_RAG_API/railway.toml) are tested, CPU-wheel optimized, and version-controlled in the repository.
+* **Production Configurations**: Native IaC Blueprint [`render.yaml`](../../render.yaml), [`Procfile`](../../Procfile), and [`railway.toml`](../../railway.toml) are present and version-controlled in the repository.
 
 ---
 
@@ -96,4 +102,3 @@ RAG applications with local embedding models (`all-MiniLM-L6-v2`) and vector sea
 3. Select GitHub repository: **`RidaJavaid/Week7_RAG_API`**.
 4. Click **Apply**.
 5. Render automatically parses `render.yaml`, downloads CPU-only PyTorch wheels from `requirements.txt`, launches `uvicorn main:app --host 0.0.0.0 --port $PORT`, and provides the live public URL.
-

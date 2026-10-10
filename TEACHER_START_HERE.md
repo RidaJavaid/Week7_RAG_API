@@ -1,134 +1,143 @@
 # Week 7 RAG API — Teacher Start Guide
 
-**Author:** Rida Javaid  
 **Assignment:** Week 7 — Production RAG API (Days 1–5)  
-**Python Version Required:** 3.10, 3.11, or 3.12  
-**Platform:** Windows 10/11
+**Platform:** Windows 10/11, 64-bit  
+**Python:** 3.10–3.12 (Python 3.12.10 was used for the ZIP clean-room test)
 
----
+## 1. Extract the ZIP
 
-## Quick Start (3 steps)
+Extract `Week7_RAG_Project_FINAL.zip` to a writable folder, for example
+`C:\Week7_RAG_API`. Do not run the project from inside the ZIP file.
 
-### Step 1 — Install Python (if not already installed)
+## 2. Install Python and project dependencies
 
-Download Python 3.11 from: https://www.python.org/downloads/
+Install Python 3.10, 3.11, or 3.12 from
+[python.org](https://www.python.org/downloads/). During installation, enable
+**Add python.exe to PATH**. Check it in Command Prompt:
 
-**Important:** During installation, check the box **"Add python.exe to PATH"**.
-
-Verify installation by opening a Command Prompt and typing:
-```
+```bat
 python --version
 ```
 
----
+From File Explorer, double-click `setup.bat` in the extracted project folder.
+It creates the project's `venv` and installs packages from `requirements.txt`.
+Wait for **Setup Complete!** and press a key to close the window.
 
-### Step 2 — Set up the environment
+An internet connection is required for the first setup to download Python
+packages and for the first app launch to download the `all-MiniLM-L6-v2`
+embedding model from Hugging Face. Allow several minutes and about 1 GB of free
+disk space for packages, model files, and working data. Model weights are not
+bundled in the ZIP. Later launches can use the local Hugging Face cache.
 
-Extract this ZIP to any folder (e.g., `C:\Week7_RAG_API`).
+No paid inference API key is needed. Slack notifications are optional and need
+a `SLACK_WEBHOOK_URL` only if live Slack delivery is being configured.
 
-Open that folder in Windows Explorer and **double-click `setup.bat`**.
+## 3. Start the FastAPI service
 
-A window will open and automatically:
-- Create a Python virtual environment in `.\venv\`
-- Install all required packages (PyTorch, FastAPI, FAISS, Streamlit, etc.)
+Double-click `Start_API.bat`. Keep its window open while using the app. The
+script starts Uvicorn on port 8000 and sets the fast cosine reranker.
 
-**First-run internet requirement:** The setup downloads ~200 MB of packages from PyPI and PyTorch CDN. After the first setup, no internet is needed.
+- API root: <http://localhost:8000/>
+- Health check: <http://localhost:8000/health>
+- Swagger UI: <http://localhost:8000/docs>
+- ReDoc: <http://localhost:8000/redoc>
 
-Wait for the message: `Setup Complete!` then close the window.
+The first start loads or downloads local models and builds the FAISS index.
+Wait for the startup-complete message before sending a request.
 
----
+## 4. Start the Streamlit dashboard
 
-### Step 3 — Run the application
+Open a second window and double-click `Start_Dashboard.bat`. Keep this window
+open too.
 
-**Open two Command Prompt windows in the project folder:**
+- Dashboard: <http://localhost:8501/>
 
-**Window 1 — Start the API backend:**
-Double-click `Start_API.bat`
+The dashboard connects to the local API at `http://localhost:8000` by default.
+Use its **Ask RAG** form for an interactive query.
 
-Wait for: `Application startup complete.`
+## 5. Try a RAG question
 
-**First-run note:** Loading AI models (all-MiniLM-L6-v2) takes **1–3 minutes** on first startup. Subsequent starts are faster.
+In the browser, open <http://localhost:8000/docs>, expand `POST /ask`, select
+**Try it out**, and submit:
 
-- API: http://localhost:8000
-- Swagger docs: http://localhost:8000/docs
-- Health check: http://localhost:8000/health
-
-**Window 2 — Start the monitoring dashboard:**
-Double-click `Start_Dashboard.bat`
-
-- Dashboard: http://localhost:8501
-
----
-
-## Sample RAG Question
-
-With both windows running, open your browser and go to:
-
-http://localhost:8000/docs
-
-Click `POST /ask` → `Try it out` → enter:
 ```json
 {"question": "What is FAISS?"}
 ```
-Click **Execute**.
 
-**Expected answer:** "FAISS is a library for efficient similarity search over dense vectors."
+The tested answer is: **“FAISS is a library for efficient similarity search
+over dense vectors.”** The response also includes a source document, stage
+timings, and the estimated inference API cost (`0.0`).
 
----
+## 6. Run automated tests
 
-## Assignment Deliverables Location
+Open Command Prompt in the extracted project folder and run:
 
-All Day 1–5 reports, notebooks, test results, and evidence are in:
-
-```
-Week7_Submission/
-  Day1/  — Speed & cost benchmark (notebook, CSV, chart)
-  Day2/  — FastAPI documentation and test results
-  Day3/  — Cost tracking and ingestion deduplication tests
-  Day4/  — Automated ingestion and Slack notification evidence
-  Day5/  — Quality evaluation, injection test, CI guide, dashboard screenshot
-  README.md
-  SUBMISSION_CHECKLIST.md
+```bat
+venv\Scripts\python.exe -m pytest tests -v
 ```
 
----
+The latest fresh ZIP clean-room test on Python 3.12.10 collected and passed all
+42 tests (0 failed, 0 skipped; 108.35 seconds). Three warnings were emitted:
+one upstream Starlette/httpx deprecation and two pytest warnings about test
+functions returning values. To repeat the test without relying on an active API
+or dashboard window, stop those services first with Ctrl+C in their respective
+windows.
 
-## Running the Test Suite
+## 7. Day 1–5 assignment deliverables
 
-```
-.\venv\Scripts\python.exe -m pytest tests/ -v
-```
+Open `Week7_Submission/`:
 
-Expected: **19 passed** (or 18 passed, 1 skipped if Slack webhook not configured)
+- `Day1/` — ten-run benchmark CSV and summary, latency chart, notebook, and
+  speed/cost report.
+- `Day2/` — API documentation, test results, deployment configuration and
+  deployment evidence.
+- `Day3/` — cost tracking and idempotent ingestion evidence.
+- `Day4/` — automated ingestion, retry/dead-letter evidence, Slack integration
+  report and screenshot.
+- `Day5/` — evaluation report/data, quality gate, prompt-injection testing,
+  concurrent load-test results, dashboard screenshot, deployment status, and
+  actual clean-room command/test logs in `Day5/cleanroom_evidence/`.
+- `README.md` and `SUBMISSION_CHECKLIST.md` — assignment overview and checklist.
 
----
+The ZIP root also includes `cleanroom_report.txt`, which records the actual
+ZIP-extraction, Windows setup, API, dashboard, and test results from this
+same-machine simulation. It is not a physical second-PC test.
 
-## Key Performance Results (Verified)
+## 8. Public Codespaces demo (temporary)
 
-| Metric | Result | Target | Status |
-|--------|--------|--------|--------|
-| Median request latency | 1.57s | ≤ 3.0s | PASS |
-| P95 request latency | 1.75s | ≤ 5.0s | PASS |
-| Paid API cost/request | $0.00 | $0.00 | PASS |
-| Quality score (50 questions) | 0.692 | ≥ 0.40 | PASS |
-| Test suite | 19 passed | All pass | PASS |
+The following are the supplied public Codespaces URLs:
 
----
+- Dashboard: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/>
+- FastAPI root: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/>
+- FastAPI health: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health>
+- FastAPI Swagger: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs>
+- FastAPI question endpoint: `POST
+  https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask`
 
-## GitHub Repository
+The owner reported successful public browser checks on October 10, 2026,
+including a dashboard RAG query and FastAPI health, docs, and ask requests.
+However, a later reachability check during this submission run received HTTP
+404 from both public hosts. The Codespace may be stopped or its forwarded URLs
+may have expired; these are **not currently confirmed live**. Codespaces is
+temporary hosting: URLs work only while the relevant Codespace and forwarded
+ports are active. No permanent hosting or future uptime is promised. Use the
+local setup above if the demo links are unavailable.
 
-https://github.com/RidaJavaid/Week7_RAG_API
+## 9. Troubleshooting
 
----
-
-## Troubleshooting
-
-**"Python not found"** → Re-install Python with "Add to PATH" checked.
-
-**Setup takes more than 10 minutes** → Normal on slow internet — PyTorch CPU (~100 MB) and sentence-transformers (~90 MB) are being downloaded.
-
-**Dashboard shows "benchmark data not found"** → Run `Start_API.bat` first (it rebuilds the FAISS index), then refresh the dashboard.
-
-**Port already in use** → Another application is using port 8000 or 8501. Restart your computer and try again.
-
-**Model loading slow** → Normal on first run. Subsequent runs reuse the cached model files from `~/.cache/huggingface/`.
+- **“Python was not found”** — install Python 3.10–3.12 and enable **Add
+  python.exe to PATH**, then open a new Command Prompt.
+- **Setup fails while downloading** — confirm internet access, free disk space,
+  and that the extracted folder is writable; run `setup.bat` again.
+- **Model download fails or startup is slow** — allow first-run internet access
+  to Hugging Face and wait for model/index initialization to finish.
+- **Port 8000 or 8501 is occupied** — close another service using that port,
+  then restart the relevant batch file.
+- **Dashboard says FastAPI is offline** — start `Start_API.bat` first and check
+  <http://localhost:8000/health>.
+- **A public link returns 404** — the Codespace or forwarded port is not
+  available; use the local launch scripts. The owner must resume/recreate and
+  re-share a Codespace to restore a public URL.
+- **Slack notifications are not delivered** — Slack is optional; configure
+  `SLACK_WEBHOOK_URL` in the environment only when testing live notification
+  delivery. Never put a webhook URL or other secret in the project or ZIP.

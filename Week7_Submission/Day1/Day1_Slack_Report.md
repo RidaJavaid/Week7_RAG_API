@@ -96,6 +96,21 @@ Both speed targets are now met.
 
 The assignment requires a speed target; quality is verified separately via the 50-question evaluation (mean keyword overlap: 0.692, threshold: 0.40 → PASSED).
 
+## Next Optimization Plan (Proposed, Not Yet Implemented)
+
+Embedding now accounts for more than 95% of measured request time, so further
+work should target embedding without weakening retrieval quality:
+
+1. Profile warm and cold embedding separately and repeat the 10-question latency
+   benchmark to confirm the bottleneck.
+2. Evaluate CPU-int8/ONNX embedding inference against the current Sentence
+   Transformer on the same benchmark and 50-question evaluation set.
+3. Adopt a faster option only if median latency remains at or below 3.0 seconds,
+   P95 remains at or below 5.0 seconds, and mean quality remains at or above the
+   0.40 threshold. Record the comparison before changing the default.
+
+These are proposed experiments, not completed optimizations or measured results.
+
 ---
 
 *Files:* `benchmark_results.csv` · `benchmark_summary.json` · `latency_chart.png`

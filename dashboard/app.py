@@ -12,6 +12,13 @@ Features:
 - API & Engine Health check
 - Interactive benchmark visualization charts
 - Recent query history with cached session storage
+
+Environment Variables:
+  RAG_API_URL  — Override the FastAPI base URL (default: http://localhost:8000).
+                 Set this when running in GitHub Codespaces or any remote environment.
+                 Example:
+                   export RAG_API_URL=https://your-codespace-8000.app.github.dev
+                   streamlit run dashboard/app.py
 """
 
 import datetime
@@ -23,6 +30,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+
+# ─── API URL Configuration ────────────────────────────────────────────────────
+# Read from environment variable so the dashboard works locally AND in
+# GitHub Codespaces / any remote deployment without code changes.
+# Trailing slashes are stripped to keep URL construction consistent.
+RAG_API_URL = os.environ.get("RAG_API_URL", "http://localhost:8000").rstrip("/")
 
 import pandas as pd
 import streamlit as st
@@ -116,7 +129,7 @@ def check_engine_health():
 def check_fastapi_health():
     try:
         import requests
-        r = requests.get("http://localhost:8000/health", timeout=1.5)
+        r = requests.get(f"{RAG_API_URL}/health", timeout=3.0)
         if r.status_code == 200:
             return True
     except Exception:
@@ -132,13 +145,17 @@ else:
     st.sidebar.error(f"● RAG Engine: {engine_info['status']}")
 
 if api_online:
-    st.sidebar.success("● FastAPI Service: Connected (:8000)")
+    st.sidebar.success(f"● FastAPI Service: Connected ({RAG_API_URL})")
 else:
-    st.sidebar.info("● FastAPI Service: Standalone mode (:8000 offline)")
+    st.sidebar.info(f"● FastAPI Service: Standalone mode ({RAG_API_URL} offline)")
 
 st.sidebar.metric("Indexed Documents", engine_info["indexed_docs"])
 st.sidebar.text(f"Embedding: {engine_info['embed_model']}")
 st.sidebar.text(f"Reranking: {engine_info['rerank_mode']}")
+st.sidebar.markdown("---")
+st.sidebar.subheader("🔗 API Configuration")
+st.sidebar.code(f"RAG_API_URL:\n{RAG_API_URL}", language=None)
+st.sidebar.caption("Override via environment variable RAG_API_URL")
 st.sidebar.markdown("---")
 st.sidebar.subheader("Production Targets")
 TARGET_MEDIAN_S = 3.0
@@ -241,7 +258,7 @@ if submitted and user_query.strip():
                 try:
                     import requests
                     api_resp = requests.post(
-                        "http://localhost:8000/ask",
+                        f"{RAG_API_URL}/ask",
                         json={"question": user_query.strip()},
                         timeout=30,
                     )
@@ -262,7 +279,7 @@ if submitted and user_query.strip():
             primary_source = sources[0] if sources else "corpus"
 
             # Display response box
-            source_badge = "FastAPI Service (http://localhost:8000/ask)" if via_api else "Local Hybrid Engine (rag.py)"
+            source_badge = f"FastAPI Service ({RAG_API_URL}/ask)" if via_api else "Local Hybrid Engine (rag.py)"
             st.success(f"**Answer:** {answer_text}")
             st.caption(f"Served via: {source_badge}")
             mcol1, mcol2, mcol3 = st.columns(3)

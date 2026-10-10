@@ -1,0 +1,8 @@
+﻿Clean-room dashboard browser test
+Date: 2026-10-10
+Archive: Week7_RAG_Project_FINAL.zip, freshly extracted to C:\Temp\Week7_FINAL_ZIP_RETRY_TEST_20261010
+Dashboard launched with Start_Dashboard.bat; API was offline to test the dashboard's standalone local-engine path.
+GET http://127.0.0.1:8501/ -> HTTP 200
+Browser question: What is FAISS?
+Answer: FAISS is a library for efficient similarity search over dense vectors.
+Served via: Local Hybrid Engine (rag.py)

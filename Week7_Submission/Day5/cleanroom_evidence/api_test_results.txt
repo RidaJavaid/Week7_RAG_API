@@ -1,0 +1,9 @@
+Time: 2026-10-10T22:10:19.1859907+05:00
+Start_API.bat launched under Python 3.12.10
+GET /health: HTTP 200 {"status":"healthy"}
+GET /docs: HTTP 200
+POST /ask: HTTP 200
+Answer: FAISS is a library for efficient similarity search over dense vectors.
+Source: a70b67df529974688113159ce1499eceb90f00e9ee7003128201b2f36778cd0f.txt
+Cost: 0.0
+Meaningful RAG answer: PASS

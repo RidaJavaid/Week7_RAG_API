@@ -1,0 +1,72 @@
+WEEK 7 RAG API — ZIP CLEAN-ROOM SIMULATION
+Run date: 2026-10-10
+Scope: Same-machine Windows simulation using a fresh extraction of the final ZIP;
+not a physical second-PC test.
+
+FINAL ARCHIVE RUN
+  Archive: C:\Users\ridaj\Week7_RAG_API\Week7_RAG_Project_FINAL.zip
+  Fresh extraction: C:\Temp\Week7_FINAL_ZIP_RETRY_TEST_20261010
+  Python: 3.12.10 (separate runtime at C:\Temp\Week7RuntimePython312)
+  No original project venv, site-packages, or model cache was copied. HF_HOME
+  was set to a new, empty cache under the extraction before first model use.
+
+REQUIRED FILE CHECK
+  PASS — main.py, rag.py, dashboard\app.py, ingestion.py, auto_ingest.py,
+  cost_tracker.py, requirements.txt, setup.bat, Start_API.bat,
+  Start_Dashboard.bat, TEACHER_START_HERE.md, README.md, HOW_TO_RUN.md,
+  tests\test_api.py, and representative Day 1–5 deliverables were present.
+
+INSTALLATION
+  PASS — setup.bat created a fresh Python 3.12.10 venv inside the extracted ZIP.
+  PASS — It installed requirements.txt and displayed "Setup Complete!"
+  PASS — pip check: "No broken requirements found."
+  The setup log is preserved as
+  Week7_Submission\Day5\cleanroom_evidence\retry_zip_setup_output.txt.
+  The pip timeout/retry settings were used on this run (60-second timeout,
+  10 retries); the setup completed successfully.
+
+FIRST-RUN MODEL AND API TESTS
+  PASS — A new HF_HOME was used; the API log records model downloads/initialization
+  from Hugging Face, and no pre-existing model cache was shared.
+  PASS — Start_API.bat launched the API from the extracted project venv.
+  PASS — GET http://127.0.0.1:8000/health -> HTTP 200,
+  {"status":"healthy"}.
+  PASS — GET http://127.0.0.1:8000/docs -> HTTP 200.
+  PASS — POST http://127.0.0.1:8000/ask with {"question":"What is FAISS?"}
+  -> HTTP 200.
+  Answer: "FAISS is a library for efficient similarity search over dense vectors."
+  Source: a70b67df529974688113159ce1499eceb90f00e9ee7003128201b2f36778cd0f.txt
+  Estimated API cost: $0.0; rerank mode: cosine_fast.
+  First-run model loading and FAISS indexing completed successfully.
+  Logs: retry_zip_api_stdout.log, retry_zip_api_stderr.log, and
+  retry_zip_api_ask.json in cleanroom_evidence.
+
+DASHBOARD TESTS
+  PASS — Start_Dashboard.bat launched Streamlit from the extracted project venv.
+  Initial browser readiness polling timed out while Streamlit initialized its
+  standalone RAG model; direct startup logs then confirmed Streamlit was running.
+  Subsequent GET http://127.0.0.1:8501/ -> HTTP 200 (6,463-byte HTML response).
+  PASS — Submitted "What is FAISS?" in a browser against the dashboard.
+  Answer: "FAISS is a library for efficient similarity search over dense vectors."
+  Served via: Local Hybrid Engine (rag.py); this check was performed with the API
+  offline so it exercises the dashboard's direct-engine fallback.
+  Browser result: retry_zip_dashboard_query.txt.
+  Startup logs: retry_zip_dashboard_stdout.log and retry_zip_dashboard_stderr.log.
+
+FRESH PYTEST RUN
+  Command: venv\Scripts\python.exe -m pytest -q
+  Working directory: fresh extracted ZIP root
+  Python: 3.12.10; pytest: 9.1.1
+  Collected/executed: 42; passed: 42; failed: 0; skipped: 0.
+  Duration: 108.35 seconds.
+  Three warnings: one upstream Starlette/httpx deprecation and two test functions
+  returning values rather than None (prompt_injection_test.py and
+  test_slack_notification.py). No tests failed.
+  Full output: Week7_Submission\Day5\cleanroom_evidence\retry_zip_pytest_output.txt.
+
+PATHS, CACHES, AND LIMITATIONS
+  No original project venv/site-packages or model cache was reused. Source and
+  launchers use project-relative paths; setup/start scripts were run from the
+  extracted project directory. This was not a physical second-computer test and
+  does not establish clean-room behavior on every Windows/Python combination.
+  First startup requires internet access to download dependencies and the model.

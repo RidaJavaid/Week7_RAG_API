@@ -141,3 +141,31 @@ python run_server_and_loadtest.py
 - **API Cost**: $0.000000 per request (100% local model inference)
 - **Quality Score**: 0.6919 on 50 questions (Threshold: ≥ 0.40 — **Passed**)
 - **Concurrent Load**: 20/20 successful requests under 5 concurrent users (0.525s median latency)
+
+---
+
+## Public Live Demo (GitHub Codespaces)
+
+> **Temporary hosting:** These URLs require the GitHub Codespace to remain active.
+> They are not permanent and future uptime is not guaranteed. The latest check
+> during this submission run received HTTP 404 from both hosts; the previous
+> browser verification below is historical evidence supplied by the project owner.
+
+| Item | Detail |
+|------|--------|
+| **Dashboard URL** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/ |
+| **FastAPI URL** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ |
+| **FastAPI health** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health |
+| **FastAPI Swagger** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs |
+| **FastAPI question endpoint** | `POST https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask` |
+| **Historical verification** | Owner reported Incognito dashboard access and successful API endpoint checks on October 10, 2026. |
+| **Historical test query** | "What is FAISS?" → "FAISS is a library for efficient similarity search over dense vectors." |
+| **Historical dashboard response time** | 0.024s, as reported by owner |
+| **Current reachability** | HTTP 404 from both public hosts during the final submission check; currently unavailable. |
+
+For the exact historical evidence and current recheck, see
+`Week7_Submission/Day5/deployment_status.md`. Codespaces links can expire when the
+Codespace is paused, deleted, or times out.
+
+For local use, follow `TEACHER_START_HERE.md` and the included Windows batch
+scripts (`setup.bat`, `Start_API.bat`, and `Start_Dashboard.bat`).

@@ -1,0 +1,8 @@
+FINAL ZIP DASHBOARD BROWSER TEST
+Date: 2026-10-10
+Extracted archive: C:\Temp\Week7_FINAL_ZIP_TEACHER_SIM_20261010
+URL: http://127.0.0.1:8501/
+Dashboard HTTP response: 200
+Question entered in the Ask RAG form: What is FAISS?
+Answer rendered: FAISS is a library for efficient similarity search over dense vectors.
+Served via: FastAPI Service (http://localhost:8000/ask)

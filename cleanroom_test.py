@@ -179,7 +179,7 @@ server = subprocess.Popen(
 
 base_url = f"http://localhost:{PORT}"
 
-def poll_health(timeout=180):
+def poll_health(timeout=420):
     deadline = time.time() + timeout
     while time.time() < deadline:
         try:
@@ -191,12 +191,26 @@ def poll_health(timeout=180):
         time.sleep(3)
     return False
 
-log("  Waiting for server (up to 3 min for model loading)...")
-ready = poll_health(180)
+log("  Waiting for server (up to 7 min for first-run model download + loading)...")
+ready = poll_health(420)
 
 if not ready:
-    server.terminate()
-    log("  ERROR: Server did not become ready within 180s.")
+    # Capture server output to help diagnose the failure
+    try:
+        server.terminate()
+        server_out, _ = server.communicate(timeout=5)
+        if server_out:
+            log()
+            log("  Server stdout/stderr (last 30 lines):")
+            out_lines = server_out.decode("utf-8", errors="replace").splitlines()
+            for l in out_lines[-30:]:
+                log(f"    {l}")
+    except Exception:
+        server.kill()
+    log()
+    log("  ERROR: Server did not become ready within 420s.")
+    log("  NOTE: On first run, sentence-transformers downloads ~700 MB of model")
+    log("        weights from HuggingFace. Ensure internet access and re-run.")
     log("  RESULT: FAIL — server startup timeout")
     save()
     sys.exit(1)

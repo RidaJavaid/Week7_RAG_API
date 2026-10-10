@@ -26,7 +26,7 @@ system (mean score ~0.56) to pass.
 
 ### 1. Initialize git repo (if not done)
 ```powershell
-cd C:\Users\ridaj\Week7_RAG_API
+cd <extracted project folder>
 git init
 git add .
 git commit -m "feat: Week7 RAG API complete submission"

@@ -1,0 +1,24 @@
+============================================================
+  Week 7 RAG API -- Starting Monitoring Dashboard
+============================================================
+
+Starting Streamlit monitoring dashboard...
+
+Dashboard URL: http://localhost:8501
+
+Press Ctrl+C in this terminal window to stop the dashboard.
+============================================================
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.17:8501
+
+  Help agents write better Streamlit apps?
+  Install the official Streamlit skills by running streamlit skills in your terminal.
+
+Loading embedding model...
+Loading reranking model...
+AI models loaded successfully!
+Creating FAISS index...

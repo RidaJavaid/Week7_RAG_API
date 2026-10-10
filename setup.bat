@@ -41,13 +41,13 @@ echo.
 
 :: 3. Upgrade pip
 echo [2/3] Upgrading pip inside virtual environment...
-".\venv\Scripts\python.exe" -m pip install --upgrade pip --quiet
+".\venv\Scripts\python.exe" -m pip install --upgrade pip --quiet --timeout 60 --retries 10
 echo.
 
 :: 4. Install dependencies from requirements.txt
 echo [3/3] Installing project dependencies from requirements.txt...
 echo (Note: Downloads lightweight local CPU embeddings: all-MiniLM-L6-v2)
-".\venv\Scripts\python.exe" -m pip install -r requirements.txt
+".\venv\Scripts\python.exe" -m pip install --timeout 60 --retries 10 -r requirements.txt
 if %ERRORLEVEL% neq 0 (
     echo [ERROR] Dependency installation encountered an issue.
     pause
