@@ -41,17 +41,21 @@ Browser opens automatically at: http://localhost:8501
 
 ## What the dashboard shows (with real data)
 
-| Section | Source file |
-|---------|-------------|
-| Median/P95/Mean latency | benchmark_summary.json |
-| Per-stage breakdown | benchmark_summary.json |
-| Latency chart | latency_chart.png |
-| Benchmark table | benchmark_results.csv |
-| Quality score | quality_report.json |
-| Cost ($0.000000) | hardcoded (local models) |
-| Targets table | computed at runtime |
+| Section | Source / Mechanism | Description |
+|---|---|---|
+| **Ask RAG Interactive UI** | Live RAG execution (`rag.py`) | Interactive question answering with live per-stage latency breakdown |
+| **Median/P95/Mean latency** | `benchmark_summary.json` | Empirical 10-run microsecond latency metrics |
+| **Per-stage breakdown** | `benchmark_summary.json` | Detailed chart of embedding, retrieval, reranking, and generation |
+| **Latency chart** | `latency_chart.png` | Stage distribution visualization |
+| **Benchmark table** | `benchmark_results.csv` | Full telemetry log across 10 benchmark queries |
+| **Quality score gate** | `quality_report.json` | Official 50-question retrieval evaluation (0.6919 vs 0.40 threshold) |
+| **Cost analysis** | `CostTracker` telemetry | $0.000000 per request (100% local model inference) |
+| **SLA Compliance** | Real-time computation | Verification of speed, cost, and quality against production SLAs |
+| **Query History** | Session state log | In-memory record of queries executed in the current session |
 
-## Streamlit note
+## Operational Modes
 
-The dashboard reads local JSON/PNG files — it does NOT connect to the API server.
-No server needs to be running to view the dashboard.
+The dashboard functions in dual modes:
+1. **Telemetry & Benchmark Mode**: Automatically loads and displays verified benchmark artifacts (`benchmark_summary.json`, `quality_report.json`, `benchmark_results.csv`) without requiring a separate backend process.
+2. **Interactive Live Mode**: If the user submits a question in the "Ask RAG" panel, it executes the local hybrid retrieval engine directly to provide real-time extractive answers and stage timing telemetry.
+

@@ -161,13 +161,17 @@ In a persistent `uvicorn` server (models loaded once), warm-call latency is
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### Production (example: Railway)
+### Production Deployment (Render)
 
-1. Push repo to GitHub
-2. Create Railway project → connect repo
-3. Set start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-4. No environment variables needed for local models
-5. Verify health endpoint: `GET https://your-app.railway.app/health`
+The application includes native Infrastructure-as-Code for Render (`render.yaml`):
+
+1. Repository: `https://github.com/RidaJavaid/Week7_RAG_API`
+2. Connect the repository in the Render Dashboard (**New +** → **Blueprint**).
+3. Render automatically provisions the service via `render.yaml`:
+   - Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+   - Health Check Path: `/health`
+   - Memory Optimization: PyTorch CPU wheels (`--extra-index-url`)
+4. Verification details are documented in `Week7_Submission/Day2/deployment_results.md`.
 
 **Resource requirements:**
 - RAM: ~2GB (SentenceTransformer + CrossEncoder + FAISS)

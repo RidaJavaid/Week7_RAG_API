@@ -26,5 +26,13 @@
     "c27a8e9e1ea295cf5d025e3f49b0f6a4580d524eb0909166c937b3d05eaa6a91": {
         "original_filename": "05_chunking_bm25_reranking.txt",
         "stored_filename": "c27a8e9e1ea295cf5d025e3f49b0f6a4580d524eb0909166c937b3d05eaa6a91.txt"
+    },
+    "4f107304245a69e2c2943d2e9b7f3d67da7f93c5ef1409e0eb5ae98ac64f49a2": {
+        "original_filename": "test_day2.txt",
+        "stored_filename": "4f107304245a69e2c2943d2e9b7f3d67da7f93c5ef1409e0eb5ae98ac64f49a2.txt"
+    },
+    "2271110d684a60beaab0c60bca71cdbc97f16b21c8460e53491b68b41779c002": {
+        "original_filename": "dup_test.txt",
+        "stored_filename": "2271110d684a60beaab0c60bca71cdbc97f16b21c8460e53491b68b41779c002.txt"
     }
 }

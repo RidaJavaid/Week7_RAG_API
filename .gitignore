@@ -35,5 +35,6 @@ desktop.ini
 .idea/
 *.swp
 *.swo
-*~
 git_path.txt
+*.zip
+auto_ingest_jobs.jsonl
