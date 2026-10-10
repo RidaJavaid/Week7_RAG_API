@@ -15,15 +15,24 @@ This guide provides simple, step-by-step instructions to run and evaluate the **
 
 ---
 
-## 2. Quick Setup (1-Click Automated Batch Script)
+## 2. Quick Setup (Automated Environment Setup)
 
+### Option A: 1-Click Batch Setup (Recommended)
 1. Extract the `Week7_RAG_Project.zip` folder to any location on your machine.
 2. Double-click **`setup.bat`**.
 
-**What `setup.bat` does automatically:**
-- Verifies Python installation on your machine.
-- Creates a dedicated virtual environment in `.\venv`.
-- Installs all required dependencies from `requirements.txt` (CPU-optimized PyTorch, FAISS, FastAPI, Streamlit, etc.).
+### Option B: Python Setup Script
+Alternatively, open PowerShell in the extracted folder and run:
+```powershell
+python setup_week7.py
+```
+
+**What the setup scripts do automatically:**
+- Verify Python installation and environment isolation.
+- Create a dedicated virtual environment in `.\venv` (preventing any global site-packages permission issues).
+- Install all required dependencies from `requirements.txt` (CPU-optimized PyTorch, FAISS, FastAPI, Streamlit, etc.).
+- Verify that every critical package (`fastapi`, `uvicorn`, `sentence_transformers`, `faiss`, `streamlit`, `torch`, etc.) imports successfully.
+
 
 ---
 

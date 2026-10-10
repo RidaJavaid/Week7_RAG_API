@@ -38,3 +38,5 @@ desktop.ini
 git_path.txt
 *.zip
 auto_ingest_jobs.jsonl
+Week7_RAG_Project/
+temp_*/

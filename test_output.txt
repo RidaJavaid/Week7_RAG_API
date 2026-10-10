@@ -18,7 +18,7 @@ tests/test_cost_tracker.py::test_step_time_recorded_accurately PASSED    [ 73%]
 tests/test_cost_tracker.py::test_total_time_in_report PASSED             [ 78%]
 tests/test_auto_ingest.py::test_A_same_document_three_times PASSED       [ 84%]
 tests/test_auto_ingest.py::test_B_invalid_document_dead_letter PASSED    [ 89%]
-tests/test_auto_ingest.py::test_C_slack_notification_live SKIPPED (P...) [ 94%]
+tests/test_auto_ingest.py::test_C_slack_notification_live PASSED         [ 94%]
 tests/test_auto_ingest.py::test_C_notification_without_webhook_logs PASSED [100%]
 
-================== 18 passed, 1 skipped in 214.31s (0:03:34) ==================
+============================= 19 passed in 50.70s =============================

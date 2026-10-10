@@ -113,11 +113,28 @@ def check_engine_health():
     except Exception as e:
         return {"status": f"Degraded ({e})", "indexed_docs": 0, "embed_model": "N/A", "rerank_mode": "N/A"}
 
+def check_fastapi_health():
+    try:
+        import requests
+        r = requests.get("http://localhost:8000/health", timeout=1.5)
+        if r.status_code == 200:
+            return True
+    except Exception:
+        pass
+    return False
+
 engine_info = check_engine_health()
+api_online = check_fastapi_health()
+
 if "Healthy" in engine_info["status"]:
     st.sidebar.success(f"● RAG Engine: {engine_info['status']}")
 else:
     st.sidebar.error(f"● RAG Engine: {engine_info['status']}")
+
+if api_online:
+    st.sidebar.success("● FastAPI Service: Connected (:8000)")
+else:
+    st.sidebar.info("● FastAPI Service: Standalone mode (:8000 offline)")
 
 st.sidebar.metric("Indexed Documents", engine_info["indexed_docs"])
 st.sidebar.text(f"Embedding: {engine_info['embed_model']}")
@@ -215,17 +232,39 @@ with st.form("ask_rag_form"):
 if submitted and user_query.strip():
     with st.spinner("Retrieving facts and reranking candidates..."):
         try:
-            import rag
             t0 = time.perf_counter()
-            response = rag.ask_rag(user_query.strip())
-            elapsed = time.perf_counter() - t0
+            via_api = False
+            response = {}
 
+            # Attempt querying live FastAPI service if reachable
+            if api_online:
+                try:
+                    import requests
+                    api_resp = requests.post(
+                        "http://localhost:8000/ask",
+                        json={"question": user_query.strip()},
+                        timeout=30,
+                    )
+                    if api_resp.status_code == 200:
+                        response = api_resp.json()
+                        via_api = True
+                except Exception:
+                    pass
+
+            # Fallback to direct local engine execution if API not responding
+            if not response:
+                import rag
+                response = rag.ask_rag(user_query.strip())
+
+            elapsed = time.perf_counter() - t0
             answer_text = response.get("answer", "No answer found.")
             sources = response.get("sources", ["local index"])
             primary_source = sources[0] if sources else "corpus"
 
             # Display response box
+            source_badge = "FastAPI Service (http://localhost:8000/ask)" if via_api else "Local Hybrid Engine (rag.py)"
             st.success(f"**Answer:** {answer_text}")
+            st.caption(f"Served via: {source_badge}")
             mcol1, mcol2, mcol3 = st.columns(3)
             mcol1.metric("Response Time", f"{elapsed:.3f}s")
             mcol2.metric("API Cost", "$0.000000")
