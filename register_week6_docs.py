@@ -1,6 +1,8 @@
-"""Register the 5 Week 6 source documents into indexed_documents.json."""
+from pathlib import Path
 import sys
-sys.path.insert(0, r"C:\Users\ridaj\Week7_RAG_API")
+
+BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR))
 import ingestion
 
 docs = {
@@ -11,8 +13,7 @@ docs = {
     "05_chunking_bm25_reranking.txt": "05_chunking_bm25_reranking.txt",
 }
 
-from pathlib import Path
-DOCS_DIR = Path(r"C:\Users\ridaj\Week7_RAG_API\documents")
+DOCS_DIR = BASE_DIR / "documents"
 
 for fname in docs:
     path = DOCS_DIR / fname

@@ -2,7 +2,7 @@
 import csv, json, statistics
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\ridaj\Week7_RAG_API")
+ROOT = Path(__file__).resolve().parent
 CSV  = ROOT / "Week7_Submission" / "Day1" / "benchmark_results.csv"
 JSON = ROOT / "Week7_Submission" / "Day1" / "benchmark_summary.json"
 

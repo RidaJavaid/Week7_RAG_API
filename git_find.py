@@ -8,8 +8,8 @@ candidates = [
     r"C:\Program Files\Git\bin\git.exe",
     r"C:\Program Files\Git\cmd\git.exe",
     r"C:\Program Files (x86)\Git\bin\git.exe",
-    r"C:\Users\ridaj\AppData\Local\Programs\Git\bin\git.exe",
-    r"C:\Users\ridaj\AppData\Local\GitHubDesktop\app-3.4.6\resources\app\git\cmd\git.exe",
+    str(Path.home() / r"AppData\Local\Programs\Git\bin\git.exe"),
+    str(Path.home() / r"AppData\Local\Programs\Git\cmd\git.exe"),
 ]
 
 found = None

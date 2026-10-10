@@ -2,7 +2,7 @@
 import subprocess
 import sys
 
-PYTHON = r"C:\Users\ridaj\Week7_RAG_API\venv\Scripts\python.exe"
+PYTHON = sys.executable
 
 packages = [
     "pytest",

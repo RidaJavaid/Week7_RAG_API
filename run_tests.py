@@ -1,9 +1,10 @@
-"""Run all Week 7 tests and save output to test_output.txt."""
+from pathlib import Path
 import subprocess
 import sys
 
-PYTHON = r"C:\Users\ridaj\Week7_RAG_API\venv\Scripts\python.exe"
-OUTPUT = r"C:\Users\ridaj\Week7_RAG_API\test_output.txt"
+BASE_DIR = Path(__file__).resolve().parent
+PYTHON = sys.executable
+OUTPUT = BASE_DIR / "test_output.txt"
 
 result = subprocess.run(
     [PYTHON, "-m", "pytest",
@@ -13,7 +14,7 @@ result = subprocess.run(
      "-v", "--tb=short", "--no-header"],
     capture_output=True,
     text=True,
-    cwd=r"C:\Users\ridaj\Week7_RAG_API",
+    cwd=str(BASE_DIR),
 )
 combined = result.stdout + result.stderr
 print(combined)
