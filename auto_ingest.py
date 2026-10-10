@@ -28,6 +28,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import shutil
 import time
 from pathlib import Path
@@ -59,21 +60,26 @@ DEAD_LETTER_FOLDER.mkdir(parents=True, exist_ok=True)
 def send_notification(message: str) -> bool:
     """Send Slack or log notification. Returns True if sent."""
     if SLACK_WEBHOOK_URL:
-        try:
-            import urllib.request
-            payload = json.dumps({"text": message}).encode()
-            req = urllib.request.Request(
-                SLACK_WEBHOOK_URL,
-                data=payload,
-                headers={"Content-Type": "application/json"},
-            )
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                ok = resp.status == 200
-                logger.info("Slack notification sent: %s", ok)
-                return ok
-        except Exception as exc:
-            logger.warning("Slack notification failed: %s", exc)
-            return False
+        import urllib.request
+        for attempt in range(2):
+            try:
+                payload = json.dumps({"text": message}).encode()
+                req = urllib.request.Request(
+                    SLACK_WEBHOOK_URL,
+                    data=payload,
+                    headers={"Content-Type": "application/json"},
+                )
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    ok = resp.status == 200
+                    logger.info("Slack notification sent: %s", ok)
+                    return ok
+            except Exception as exc:
+                if attempt == 0:
+                    time.sleep(1)
+                    continue
+                err_msg = re.sub(r"https?://\S+", "[REDACTED_URL]", str(exc))
+                logger.warning("Slack notification failed: %s", err_msg)
+                return False
     else:
         logger.info("NOTIFICATION (no webhook configured): %s", message)
         return True  # logged successfully

@@ -103,7 +103,7 @@ This document tracks the technical requirements and verification artifacts acros
 | Retries never duplicate | VERIFIED | Dedup before ingest |
 | Test A: 3× same doc | VERIFIED | test_A_same_document_three_times PASSED (test_output.txt) |
 | Test B: invalid → dead_letter | VERIFIED | test_B_invalid_document_dead_letter PASSED (test_output.txt) |
-| Test C: Slack notification live | BLOCKED | SLACK_WEBHOOK_URL not set; skip confirmed in pytest |
+| Test C: Slack notification live | VERIFIED | test_C_slack_notification_live PASSED, screenshot in Day4/slack_notification_evidence.png |
 | Test C: fallback log | VERIFIED | test_C_notification_without_webhook_logs PASSED |
 | Automation script | VERIFIED | `auto_ingest.py` |
 | Startup instructions | VERIFIED | `Day4/Day4_Slack_Report.md` |
@@ -252,9 +252,9 @@ This document tracks the technical requirements and verification artifacts acros
 
 | Item | Status | Technical Details |
 |---|---|---|
-| **Live Slack Webhook** | BLOCKED (Local Fallback Verified) | Requires user to create incoming webhook at [api.slack.com](https://api.slack.com/apps) and set `SLACK_WEBHOOK_URL`. Fallback logging verified. |
-| **Render Cloud Deployment** | CONFIGURATION READY | `render.yaml` and `Procfile` configured. User activation requires connecting repo in Render dashboard. |
-| **GitHub Push** | READY FOR APPROVAL | Local commits ready to push to `origin/main`. |
+| **Live Slack Webhook** | VERIFIED | HTTP 200 payload accepted, verified in Slack channel, visual evidence in `Day4/slack_notification_evidence.png`. |
+| **Render Cloud Deployment** | BLOCKED (Card Verification Required) | Free tier provisioning on Render requires payment card verification. All IaC configs (`render.yaml`, `Procfile`, CPU wheels) are verified in repo. Local production API 100% operational. |
+| **GitHub Push** | PENDING PUSH APPROVAL | Local commit ready to push to `origin/main`. |
 
 ---
 

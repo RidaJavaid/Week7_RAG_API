@@ -12,6 +12,7 @@ import datetime
 import json
 import logging
 import os
+import re
 import sys
 import urllib.request
 from pathlib import Path
@@ -58,10 +59,11 @@ def test_slack_integration():
                 f"- **Payload Delivered**: `\"{test_message}\"`\n"
             )
         except Exception as exc:
-            print(f"[ERROR] Live delivery failed: {exc}")
-            outcome = f"FAIL (HTTP Error: {exc})"
+            err_msg = re.sub(r"https?://\S+", "[REDACTED_WEBHOOK_URL]", str(exc))
+            print(f"[ERROR] Live delivery failed: {err_msg}")
+            outcome = f"FAIL (HTTP Error: {err_msg})"
             mode_desc = "Live Webhook Attempt Failed"
-            evidence_details = f"- **Error Encountered**: `{exc}`\n"
+            evidence_details = f"- **Error Encountered**: `{err_msg}`\n"
     else:
         print("[INFO] SLACK_WEBHOOK_URL environment variable is NOT set.")
         print("[INFO] Testing verified local fallback logging mechanism...")

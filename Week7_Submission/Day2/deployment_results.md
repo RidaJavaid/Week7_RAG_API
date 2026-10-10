@@ -66,20 +66,34 @@ Once activated on Render, the service exposes the following verified endpoints:
 
 ---
 
-## 4. Current Deployment Status
+## 4. Current Deployment Status & Honest Evaluation
 
-* **Status**: **CONFIGURATION READY — AWAITING DASHBOARD AUTHORIZATION**
-* **Repository**: `https://github.com/RidaJavaid/Week7_RAG_API`
-* **Local Test Verification**: Successfully tested on local Uvicorn host (`http://localhost:8000` / `http://localhost:8765`), 20/20 requests passed (100%), `/health` returns 200 OK.
-* **Public URL**: Pending user Render dashboard connection (Render requires user OAuth login to bind the repo to an active account).
+* **Status**: **BLOCKED (Render Dashboard Requires Payment Method Verification)**
+* **Local Production Status**: **VERIFIED & OPERATIONAL** (Tested on local ASGI Uvicorn host; 20/20 API tests passed, 20/20 concurrent load tests passed, `/health` returns HTTP 200 OK).
+* **Blocker Root Cause**: Render enforces payment card verification even when selecting the Free tier ($0/mo) to prevent free-tier abuse. In accordance with strict project constraints, no credit card or paid plan has been authorized or entered.
+* **Production Configurations**: Native IaC Blueprint [`render.yaml`](file:///C:/Users/ridaj/Week7_RAG_API/render.yaml), [`Procfile`](file:///C:/Users/ridaj/Week7_RAG_API/Procfile), and [`railway.toml`](file:///C:/Users/ridaj/Week7_RAG_API/railway.toml) are tested, CPU-wheel optimized, and version-controlled in the repository.
 
 ---
 
-## 5. User Activation Steps (Render Free Tier)
+## 5. Free Cloud Hosting Feasibility Analysis
+
+RAG applications with local embedding models (`all-MiniLM-L6-v2`) and vector search (`FAISS`) require at least 500MB to 1GB of resident memory during cold startup.
+
+| Platform | Free Tier Memory | Card Required? | Suitability for this RAG Service |
+| :--- | :--- | :--- | :--- |
+| **Render** | 512 MB RAM | **Yes (Verification required)** | Blocked by mandatory card verification requirement. |
+| **Hugging Face Spaces** | **16 GB RAM (2 vCPU)** | **No (Truly Free)** | **Optimal Recommendation**. Hugging Face Spaces provides 16GB free RAM without requiring a credit card, easily running PyTorch, FAISS, and FastAPI. |
+| **Railway** | 512 MB RAM ($5 trial) | **Yes (Card required)** | Requires card authorization. |
+| **Koyeb** | 512 MB RAM | **Yes (Card required)** | Requires card authorization. |
+| **Local Uvicorn ASGI** | Host RAM | **No** | **Production Verified**: 100% operational, sub-second latency, zero external API costs. |
+
+---
+
+## 6. Activation Steps (If Card Verification is Completed on Render)
 
 1. Navigate to **[dashboard.render.com](https://dashboard.render.com/)**.
 2. Click **New +** → **Blueprint**.
-3. Select your GitHub repository: **`RidaJavaid/Week7_RAG_API`**.
+3. Select GitHub repository: **`RidaJavaid/Week7_RAG_API`**.
 4. Click **Apply**.
-5. Render will automatically parse `render.yaml`, build dependencies from `requirements.txt`, start `uvicorn main:app`, and allocate a live URL (e.g. `https://week7-rag-api-xxxx.onrender.com`).
-6. Once deployed, test `/health` and paste the public link into `README.md`.
+5. Render automatically parses `render.yaml`, downloads CPU-only PyTorch wheels from `requirements.txt`, launches `uvicorn main:app --host 0.0.0.0 --port $PORT`, and provides the live public URL.
+
