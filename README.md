@@ -144,30 +144,21 @@ python run_server_and_loadtest.py
 
 ---
 
-## Public Demo (GitHub Codespaces — currently unavailable)
+## Public Demo Deployment
 
-> **Temporary hosting:** These URLs require the GitHub Codespace to remain active.
-> They are not permanent and future uptime is not guaranteed. On October 11,
-> 2026, the existing Codespace appeared Active in GitHub, but its VS Code
-> connection reported 504 errors. Public probes reached GitHub's authentication
-> gateway (including HTTP 401 for POST `/ask`), not the apps. These URLs are not
-> currently verified as publicly accessible.
+The former GitHub Codespaces URLs are temporary and currently unavailable; a
+Codespace must not be started by the instructor. The Streamlit Community Cloud
+deployment is **not yet created or verified**. Once deployed, the Streamlit app
+will run the included FAISS + BM25 RAG engine directly and will not depend on
+localhost, a separate API host, or GitHub authentication from its visitors.
+Streamlit Community Cloud account and repository authorization are required to
+create the deployment; app availability is subject to provider limits.
 
-| Item | Detail |
-|------|--------|
-| **Dashboard URL** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/ |
-| **FastAPI URL** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ |
-| **FastAPI health** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health |
-| **FastAPI Swagger** | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs |
-| **FastAPI question endpoint** | `POST https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask` |
-| **Historical verification** | Owner reported Incognito dashboard access and successful API endpoint checks on October 10, 2026. |
-| **Historical test query** | "What is FAISS?" → "FAISS is a library for efficient similarity search over dense vectors." |
-| **Historical dashboard response time** | 0.024s, as reported by owner |
-| **Current reachability** | Not verified: authentication-gateway responses/401; currently unavailable. |
-
-For the exact historical evidence and current recheck, see
-`Week7_Submission/Day5/deployment_status.md`. Codespaces links can expire when the
-Codespace is paused, deleted, or times out.
+The deployment entry point is `dashboard/app.py`; app-specific CPU dependencies
+are in `dashboard/requirements.txt`. See
+`Week7_Submission/Day5/deployment_status.md` for the previous Codespaces checks
+and deployment status. Do not treat the historical owner-reported Codespaces
+checks as a currently working public demo.
 
 For local use, follow `TEACHER_START_HERE.md` and the included Windows batch
 scripts (`setup.bat`, `Start_API.bat`, and `Start_Dashboard.bat`).

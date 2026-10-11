@@ -43,11 +43,12 @@ embedder = SentenceTransformer(
     "all-MiniLM-L6-v2"
 )
 
-print("Loading reranking model...")
-
-reranker = CrossEncoder(
-    "cross-encoder/ms-marco-MiniLM-L-6-v2"
-)
+reranker = None
+if not FAST_RERANK:
+    print("Loading reranking model...")
+    reranker = CrossEncoder(
+        "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    )
 
 print("AI models loaded successfully!")
 
@@ -293,6 +294,12 @@ def ask_rag(question):
                     (question, chunks[i]["text"])
                     for i in candidates
                 ]
+
+                if reranker is None:
+                    raise RuntimeError(
+                        "Cross-encoder reranker was not initialized."
+                    )
+
                 rerank_scores = reranker.predict(pairs)
 
             best_position = int(

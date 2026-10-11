@@ -28,6 +28,9 @@ import sys
 import time
 from pathlib import Path
 
+# The hosted dashboard uses the cached-embedding reranker to reduce CPU use.
+os.environ.setdefault("FAST_RERANK", "1")
+
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
@@ -275,8 +278,11 @@ if submitted and user_query.strip():
 
             elapsed = time.perf_counter() - t0
             answer_text = response.get("answer", "No answer found.")
-            sources = response.get("sources", ["local index"])
-            primary_source = sources[0] if sources else "corpus"
+            sources = response.get("sources")
+            if sources is None:
+                source = response.get("source")
+                sources = [source] if source else []
+            primary_source = sources[0] if sources else "Source not returned"
 
             # Display response box
             source_badge = f"FastAPI Service ({RAG_API_URL}/ask)" if via_api else "Local Hybrid Engine (rag.py)"

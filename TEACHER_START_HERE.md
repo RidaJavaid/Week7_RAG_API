@@ -103,39 +103,27 @@ The ZIP root also includes `cleanroom_report.txt`, which records the actual
 ZIP-extraction, Windows setup, API, dashboard, and test results from this
 same-machine simulation. It is not a physical second-PC test.
 
-## 8. Public Codespaces demo (temporary)
+## 8. Public demo deployment status
 
-The following are the supplied public Codespaces URLs:
+The previous GitHub Codespaces URLs are temporary and currently unavailable.
+The existing Codespace sometimes appears Active but its editor session reported
+504 connection failures; public links returned authentication-gateway pages or
+401 instead of application responses. Do not rely on those links or create a
+Codespace to evaluate the project.
 
-- Dashboard: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/>
-- FastAPI root: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/>
-- FastAPI health: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health>
-- FastAPI Swagger: <https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs>
-- FastAPI question endpoint: `POST
-  https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask`
+A standalone Streamlit Community Cloud deployment is being prepared at
+`dashboard/app.py` using `dashboard/requirements.txt`. It runs the project's
+real FAISS + BM25 RAG pipeline directly, so no separate FastAPI deployment or
+localhost URL is needed. **A public Community Cloud URL is not available until
+the repository owner authorizes and creates the deployment.** The instructor
+should use the local Windows setup in this guide until a tested public URL is
+published.
 
-The owner reported successful public browser checks on October 10, 2026.
-On October 11, the existing Codespace appeared Active in GitHub, but its
-browser session reported connection errors (504). Requests to the public links
-reached the GitHub authentication gateway, not the apps; the POST `/ask` check
-returned 401. The deployment is **not currently verified live or publicly
-accessible without GitHub login**.
-
-To restore the existing deployment, resume the existing `psychic bassoon`
-Codespace (do not create a new one), run these commands in separate terminals,
-and set both ports to **Public** in the Codespaces Ports panel:
-
-```bash
-FAST_RERANK=1 python -m uvicorn main:app --host 0.0.0.0 --port 8000
-python -m streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
-```
-
-Then verify the forwarded `/health`, `/docs`, and `/ask` API endpoints and submit
-`What is FAISS?` in the dashboard from a logged-out browser. A GitHub login page,
-401, 404, or 502 is not a successful deployment check. Codespaces is temporary
-hosting: URLs work only while the Codespace and forwarded ports are active. No
-permanent hosting or future uptime is promised. Use the local setup above if the
-demo links are unavailable.
+Codespaces is temporary hosting and cannot guarantee 24/7 availability.
+Community Cloud apps are also subject to the provider's availability and
+resource limits. A public link is only considered verified after it loads
+without GitHub sign-in and a real `What is FAISS?` query returns an answer and
+retrieved source.
 
 ## 9. Troubleshooting
 

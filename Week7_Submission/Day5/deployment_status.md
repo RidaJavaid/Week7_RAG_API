@@ -2,12 +2,12 @@
 
 ## Hosting and current availability
 
-Both deployments use GitHub Codespaces forwarded ports. Codespaces is temporary
-hosting, not a permanent deployment; the public URLs require the Codespace to
-remain active and the ports to remain forwarded and public. Do not assume future
-uptime.
+The old public URLs used GitHub Codespaces forwarded ports. Codespaces is
+temporary hosting, not a permanent deployment; those URLs require the Codespace
+to remain active and the ports to remain forwarded and public. Do not assume
+future uptime.
 
-| Service | Public URL | Latest check, October 11, 2026 |
+| Service | Public URL | Latest Codespaces check, October 11, 2026 |
 |---|---|---|
 | Streamlit dashboard | https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/ | HTTP 200 after redirect, but response was GitHub Codespaces authentication-gateway HTML, not the dashboard. Not publicly verified. |
 | FastAPI root | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ | Not verified. |
@@ -26,6 +26,32 @@ processes could not be confirmed. No deployment result is claimed as live.
 The project owner previously reported successful Incognito dashboard and API
 checks on October 10, 2026. Those are historical owner-reported results, not
 verification of the current deployment.
+
+## Standalone public dashboard deployment
+
+The selected no-cost deployment approach is Streamlit Community Cloud hosting
+`dashboard/app.py` as a standalone app. It uses the same repository's
+`dashboard/requirements.txt`, loads the existing document corpus, FAISS index,
+sentence-transformer embeddings, BM25 retrieval, and the existing RAG answer
+path directly. It does not require a separate FastAPI host, localhost, or a
+Codespace. The dashboard defaults to cached-embedding reranking to avoid loading
+the unused cross-encoder model.
+
+**Status: NOT DEPLOYED OR PUBLICLY VERIFIED.** Creating the app requires the
+repository owner to sign in to Streamlit Community Cloud, authorize GitHub
+repository access, select `RidaJavaid/Week7_RAG_API`, branch `main`, and entry
+point `dashboard/app.py`. No app URL can be supplied until that owner-controlled
+authorization and deployment occur. No public RAG query or logged-out visitor
+test has succeeded yet.
+
+The app-specific requirements file is placed beside its entry point so
+Community Cloud uses the lightweight CPU dependency set rather than installing
+the project's test/load-testing dependencies. The Streamlit default fast-rerank
+mode avoids loading the cross-encoder reranking model; the FAISS-backed semantic
+retrieval and source output remain in use. First startup needs internet access
+to download the sentence-transformer model. This no-cost hosted path is still
+subject to provider quotas, sleeping, and resource limits; no uninterrupted or
+permanent availability is guaranteed.
 
 ## Historical RAG query evidence
 
@@ -55,19 +81,17 @@ The extracted ZIP clean-room test independently confirmed:
 See the ZIP-root `cleanroom_report.txt` for environment, test counts, and details.
 This local test is a same-machine simulation, not a second-PC test.
 
-## Restore the existing public deployment
+## Create and verify the standalone public dashboard
 
-1. In GitHub, open **Codespaces** and resume the existing `psychic bassoon`
-   Codespace. Do not create another Codespace.
-2. In its terminal, start FastAPI:
-   `FAST_RERANK=1 python -m uvicorn main:app --host 0.0.0.0 --port 8000`.
-3. In a second terminal, start Streamlit:
-   `python -m streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501`.
-4. Open the **Ports** panel. Set ports 8000 and 8501 to **Public**. Confirm the
-   displayed forwarded URLs match the application links above.
-5. Test `/health`, `/docs`, and POST `/ask` on the forwarded port-8000 URL, then
-   submit `What is FAISS?` in the dashboard on port 8501. Verify from a logged-out
-   browser that responses come from the applications, not a GitHub login page.
+1. Sign in to Streamlit Community Cloud and authorize access to the public
+   `RidaJavaid/Week7_RAG_API` GitHub repository.
+2. Create an app using branch `main` and entry point `dashboard/app.py`. The
+   adjacent `dashboard/requirements.txt` supplies the app dependencies.
+3. Wait for the actual app build to finish, then use the URL Streamlit provides.
+4. In a logged-out browser, verify the dashboard renders, submit
+   `What is FAISS?`, and confirm the returned answer includes a retrieved source.
+5. Record the real URL, response and verification time here only after those
+   checks succeed.
 
 The Codespace must stay active for these temporary URLs to work. No permanent
 hosting or guaranteed future availability is claimed.
