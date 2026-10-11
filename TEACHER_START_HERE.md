@@ -4,6 +4,19 @@
 **Platform:** Windows 10/11, 64-bit  
 **Python:** 3.10–3.12 (Python 3.12.10 was used for the ZIP clean-room test)
 
+## Quick option: open the public demo
+
+Open the live dashboard: <https://week7ragapi-wtq6v9sv6sbwudtzgtfq7d.streamlit.app/>
+
+In the **Ask RAG** box, enter `What is FAISS?` and click **Ask RAG**. The
+verified answer is “FAISS is a library for efficient similarity search over
+dense vectors.” The result includes the retrieved source. This hosted dashboard
+runs the project's real FAISS + BM25 RAG pipeline; it does not require Python,
+a local API, or starting GitHub Codespaces. The browser verification was
+performed on October 11, 2026. Streamlit Community Cloud can sleep or be
+unavailable under provider limits, so use the local instructions below if the
+public app is temporarily unavailable.
+
 ## 1. Extract the ZIP
 
 Extract `Week7_RAG_Project_FINAL.zip` to a writable folder, for example
@@ -103,27 +116,12 @@ The ZIP root also includes `cleanroom_report.txt`, which records the actual
 ZIP-extraction, Windows setup, API, dashboard, and test results from this
 same-machine simulation. It is not a physical second-PC test.
 
-## 8. Public demo deployment status
+## 8. Previous Codespaces deployment
 
-The previous GitHub Codespaces URLs are temporary and currently unavailable.
-The existing Codespace sometimes appears Active but its editor session reported
-504 connection failures; public links returned authentication-gateway pages or
-401 instead of application responses. Do not rely on those links or create a
-Codespace to evaluate the project.
-
-A standalone Streamlit Community Cloud deployment is being prepared at
-`dashboard/app.py` using `dashboard/requirements.txt`. It runs the project's
-real FAISS + BM25 RAG pipeline directly, so no separate FastAPI deployment or
-localhost URL is needed. **A public Community Cloud URL is not available until
-the repository owner authorizes and creates the deployment.** The instructor
-should use the local Windows setup in this guide until a tested public URL is
-published.
-
-Codespaces is temporary hosting and cannot guarantee 24/7 availability.
-Community Cloud apps are also subject to the provider's availability and
-resource limits. A public link is only considered verified after it loads
-without GitHub sign-in and a real `What is FAISS?` query returns an answer and
-retrieved source.
+The previous GitHub Codespaces links are temporary and were not working during
+the latest check. The current public demo is the Streamlit Community Cloud link
+in the Quick option above. Community Cloud is also subject to provider
+availability and resource limits; no permanent or 24/7 hosting is promised.
 
 ## 9. Troubleshooting
 
@@ -137,10 +135,8 @@ retrieved source.
   then restart the relevant batch file.
 - **Dashboard says FastAPI is offline** — start `Start_API.bat` first and check
   <http://localhost:8000/health>.
-- **A public link returns 401, 404, or 502, or shows GitHub login** — resume the
-  existing Codespace, start the appropriate app, and set the forwarded port to
-  **Public** in the Ports panel. Use the local launch scripts if it remains
-  unavailable; Codespaces URLs are temporary.
+- **The public demo is sleeping or unavailable** — wait briefly and refresh.
+  If it remains unavailable, use the local setup and launch scripts above.
 - **Slack notifications are not delivered** — Slack is optional; configure
   `SLACK_WEBHOOK_URL` in the environment only when testing live notification
   delivery. Never put a webhook URL or other secret in the project or ZIP.

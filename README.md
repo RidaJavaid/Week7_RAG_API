@@ -146,19 +146,19 @@ python run_server_and_loadtest.py
 
 ## Public Demo Deployment
 
-The former GitHub Codespaces URLs are temporary and currently unavailable; a
-Codespace must not be started by the instructor. The Streamlit Community Cloud
-deployment is **not yet created or verified**. Once deployed, the Streamlit app
-will run the included FAISS + BM25 RAG engine directly and will not depend on
-localhost, a separate API host, or GitHub authentication from its visitors.
-Streamlit Community Cloud account and repository authorization are required to
-create the deployment; app availability is subject to provider limits.
+**Live Streamlit dashboard:** <https://week7ragapi-wtq6v9sv6sbwudtzgtfq7d.streamlit.app/>
 
-The deployment entry point is `dashboard/app.py`; app-specific CPU dependencies
-are in `dashboard/requirements.txt`. See
-`Week7_Submission/Day5/deployment_status.md` for the previous Codespaces checks
-and deployment status. Do not treat the historical owner-reported Codespaces
-checks as a currently working public demo.
+Verified in the browser on October 11, 2026: the dashboard loaded, showed the
+RAG engine healthy with 15 indexed documents, and answered `What is FAISS?` with
+“FAISS is a library for efficient similarity search over dense vectors.” The
+answer came from the local hybrid RAG engine and included a retrieved document
+source. The dashboard runs its included FAISS + BM25 pipeline directly; a
+separate public FastAPI endpoint is not required for this hosted demo.
+
+Streamlit Community Cloud is subject to provider availability and resource
+limits; this does not guarantee permanent or uninterrupted hosting. The former
+Codespaces API and dashboard URLs are temporary and are not the current public
+demo. See `Week7_Submission/Day5/deployment_status.md` for the latest evidence.
 
 For local use, follow `TEACHER_START_HERE.md` and the included Windows batch
 scripts (`setup.bat`, `Start_API.bat`, and `Start_Dashboard.bat`).

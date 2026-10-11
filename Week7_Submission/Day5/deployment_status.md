@@ -27,31 +27,27 @@ The project owner previously reported successful Incognito dashboard and API
 checks on October 10, 2026. Those are historical owner-reported results, not
 verification of the current deployment.
 
-## Standalone public dashboard deployment
+## Public Streamlit Community Cloud dashboard
 
-The selected no-cost deployment approach is Streamlit Community Cloud hosting
-`dashboard/app.py` as a standalone app. It uses the same repository's
-`dashboard/requirements.txt`, loads the existing document corpus, FAISS index,
-sentence-transformer embeddings, BM25 retrieval, and the existing RAG answer
-path directly. It does not require a separate FastAPI host, localhost, or a
-Codespace. The dashboard defaults to cached-embedding reranking to avoid loading
-the unused cross-encoder model.
+**URL:** https://week7ragapi-wtq6v9sv6sbwudtzgtfq7d.streamlit.app/
 
-**Status: NOT DEPLOYED OR PUBLICLY VERIFIED.** Creating the app requires the
-repository owner to sign in to Streamlit Community Cloud, authorize GitHub
-repository access, select `RidaJavaid/Week7_RAG_API`, branch `main`, and entry
-point `dashboard/app.py`. No app URL can be supplied until that owner-controlled
-authorization and deployment occur. No public RAG query or logged-out visitor
-test has succeeded yet.
+**Status: LIVE and browser-verified October 11, 2026.** The dashboard rendered
+without a GitHub sign-in prompt. Its sidebar reported `RAG Engine: Healthy`,
+`Indexed Documents: 15`, and `Reranking: cosine_fast`. A live submission of
+`What is FAISS?` returned:
 
-The app-specific requirements file is placed beside its entry point so
-Community Cloud uses the lightweight CPU dependency set rather than installing
-the project's test/load-testing dependencies. The Streamlit default fast-rerank
-mode avoids loading the cross-encoder reranking model; the FAISS-backed semantic
-retrieval and source output remain in use. First startup needs internet access
-to download the sentence-transformer model. This no-cost hosted path is still
-subject to provider quotas, sleeping, and resource limits; no uninterrupted or
-permanent availability is guaranteed.
+> FAISS is a library for efficient similarity search over dense vectors.
+
+The response UI reported `Served via: Local Hybrid Engine (rag.py)` and a
+retrieved primary source file
+`a70b67df529974688113159ce1499eceb90f00e9ee7003128201b2f36778cd0f.txt`.
+This verifies real retrieval against the hosted app's document corpus, FAISS
+and BM25 pipeline rather than a canned answer. The application is a standalone
+Streamlit dashboard; a separate public FastAPI service is not required for this
+demo. The app-specific CPU dependencies are in `dashboard/requirements.txt`.
+
+Streamlit Community Cloud is subject to provider availability, sleeping, and
+resource limits. This check does not promise permanent or uninterrupted uptime.
 
 ## Historical RAG query evidence
 
@@ -81,17 +77,11 @@ The extracted ZIP clean-room test independently confirmed:
 See the ZIP-root `cleanroom_report.txt` for environment, test counts, and details.
 This local test is a same-machine simulation, not a second-PC test.
 
-## Create and verify the standalone public dashboard
+## Public API status
 
-1. Sign in to Streamlit Community Cloud and authorize access to the public
-   `RidaJavaid/Week7_RAG_API` GitHub repository.
-2. Create an app using branch `main` and entry point `dashboard/app.py`. The
-   adjacent `dashboard/requirements.txt` supplies the app dependencies.
-3. Wait for the actual app build to finish, then use the URL Streamlit provides.
-4. In a logged-out browser, verify the dashboard renders, submit
-   `What is FAISS?`, and confirm the returned answer includes a retrieved source.
-5. Record the real URL, response and verification time here only after those
-   checks succeed.
+The former Codespaces FastAPI endpoint returned authentication-gateway results
+or 404 during the October 11 checks; it is not represented as live. The hosted
+Streamlit demo above performs RAG directly and needs no separate API URL.
 
 The Codespace must stay active for these temporary URLs to work. No permanent
 hosting or guaranteed future availability is claimed.
