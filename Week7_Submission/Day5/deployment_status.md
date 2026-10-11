@@ -7,20 +7,25 @@ hosting, not a permanent deployment; the public URLs require the Codespace to
 remain active and the ports to remain forwarded and public. Do not assume future
 uptime.
 
-| Service | Public URL | Historical verification reported by owner | Rechecked October 10, 2026 |
-|---|---|---|---|
-| Streamlit dashboard | https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/ | Opened in Incognito without GitHub login; "What is FAISS?" returned a correct answer. | HTTP 404; not currently reachable. |
-| FastAPI root | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ | GET `/` returned running status. | HTTP 404; not currently reachable. |
-| FastAPI health | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health | GET `/health` returned `{"status":"healthy"}`. | HTTP 404; not currently reachable. |
-| FastAPI Swagger | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs | Swagger UI opened. | HTTP 404; not currently reachable. |
-| FastAPI ask | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask | POST `/ask` returned HTTP 200 with a RAG answer and source. | HTTP 404 host response; not currently reachable. |
+| Service | Public URL | Latest check, October 11, 2026 |
+|---|---|---|
+| Streamlit dashboard | https://psychic-bassoon-q7p4xrq7vr6934q7v-8501.app.github.dev/ | HTTP 200 after redirect, but response was GitHub Codespaces authentication-gateway HTML, not the dashboard. Not publicly verified. |
+| FastAPI root | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ | Not verified. |
+| FastAPI health | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/health | HTTP 200 after redirect, but response was GitHub Codespaces authentication-gateway HTML, not `{"status":"healthy"}`. Not publicly verified. |
+| FastAPI Swagger | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/docs | HTTP 200 after redirect, but response was GitHub Codespaces authentication-gateway HTML, not Swagger. Not publicly verified. |
+| FastAPI ask | https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask | POST `{"question":"What is FAISS?"}` returned HTTP 401. No RAG answer was received. |
 
-The historical results in the third column were supplied by the project owner.
-During this later check, direct requests to both public hosts returned HTTP 404,
-including requests to `/health`, `/docs`, and the dashboard root. This indicates
-the old forwarded endpoints cannot presently be confirmed live; it does not
-invalidate the local verification recorded below. The Codespace owner must resume
-or recreate the Codespace and re-share active public port links to restore access.
+GitHub's Codespaces list showed the existing `psychic bassoon` Codespace as
+**Active**. However, its browser VS Code session logged repeated HTTP 504 and
+connection/authentication errors. The host probes also previously returned 404.
+The latest 200 responses above were the GitHub authentication gateway (identified
+by its `authUrl` page metadata), not application responses. Public access without
+GitHub authentication, both Public port settings, and both running application
+processes could not be confirmed. No deployment result is claimed as live.
+
+The project owner previously reported successful Incognito dashboard and API
+checks on October 10, 2026. Those are historical owner-reported results, not
+verification of the current deployment.
 
 ## Historical RAG query evidence
 
@@ -50,15 +55,19 @@ The extracted ZIP clean-room test independently confirmed:
 See the ZIP-root `cleanroom_report.txt` for environment, test counts, and details.
 This local test is a same-machine simulation, not a second-PC test.
 
-## Recreate the public deployment
+## Restore the existing public deployment
 
-1. Create or resume a GitHub Codespace for the repository.
-2. Install dependencies with `pip install -r requirements.txt`.
-3. Start FastAPI with `FAST_RERANK=1 uvicorn main:app --host 0.0.0.0 --port 8000`.
-4. Set port 8000 to **Public** in the Codespaces Ports panel.
-5. Set `RAG_API_URL` to the active public port-8000 URL and start Streamlit:
-   `streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0`.
-6. Set port 8501 to **Public** and use the newly displayed forwarded URL.
+1. In GitHub, open **Codespaces** and resume the existing `psychic bassoon`
+   Codespace. Do not create another Codespace.
+2. In its terminal, start FastAPI:
+   `FAST_RERANK=1 python -m uvicorn main:app --host 0.0.0.0 --port 8000`.
+3. In a second terminal, start Streamlit:
+   `python -m streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501`.
+4. Open the **Ports** panel. Set ports 8000 and 8501 to **Public**. Confirm the
+   displayed forwarded URLs match the application links above.
+5. Test `/health`, `/docs`, and POST `/ask` on the forwarded port-8000 URL, then
+   submit `What is FAISS?` in the dashboard on port 8501. Verify from a logged-out
+   browser that responses come from the applications, not a GitHub login page.
 
 The Codespace must stay active for these temporary URLs to work. No permanent
 hosting or guaranteed future availability is claimed.

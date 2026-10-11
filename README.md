@@ -144,12 +144,14 @@ python run_server_and_loadtest.py
 
 ---
 
-## Public Live Demo (GitHub Codespaces)
+## Public Demo (GitHub Codespaces — currently unavailable)
 
 > **Temporary hosting:** These URLs require the GitHub Codespace to remain active.
-> They are not permanent and future uptime is not guaranteed. The latest check
-> during this submission run received HTTP 404 from both hosts; the previous
-> browser verification below is historical evidence supplied by the project owner.
+> They are not permanent and future uptime is not guaranteed. On October 11,
+> 2026, the existing Codespace appeared Active in GitHub, but its VS Code
+> connection reported 504 errors. Public probes reached GitHub's authentication
+> gateway (including HTTP 401 for POST `/ask`), not the apps. These URLs are not
+> currently verified as publicly accessible.
 
 | Item | Detail |
 |------|--------|
@@ -161,7 +163,7 @@ python run_server_and_loadtest.py
 | **Historical verification** | Owner reported Incognito dashboard access and successful API endpoint checks on October 10, 2026. |
 | **Historical test query** | "What is FAISS?" → "FAISS is a library for efficient similarity search over dense vectors." |
 | **Historical dashboard response time** | 0.024s, as reported by owner |
-| **Current reachability** | HTTP 404 from both public hosts during the final submission check; currently unavailable. |
+| **Current reachability** | Not verified: authentication-gateway responses/401; currently unavailable. |
 
 For the exact historical evidence and current recheck, see
 `Week7_Submission/Day5/deployment_status.md`. Codespaces links can expire when the

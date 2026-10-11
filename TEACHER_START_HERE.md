@@ -114,14 +114,28 @@ The following are the supplied public Codespaces URLs:
 - FastAPI question endpoint: `POST
   https://psychic-bassoon-q7p4xrq7vr6934q7v-8000.app.github.dev/ask`
 
-The owner reported successful public browser checks on October 10, 2026,
-including a dashboard RAG query and FastAPI health, docs, and ask requests.
-However, a later reachability check during this submission run received HTTP
-404 from both public hosts. The Codespace may be stopped or its forwarded URLs
-may have expired; these are **not currently confirmed live**. Codespaces is
-temporary hosting: URLs work only while the relevant Codespace and forwarded
-ports are active. No permanent hosting or future uptime is promised. Use the
-local setup above if the demo links are unavailable.
+The owner reported successful public browser checks on October 10, 2026.
+On October 11, the existing Codespace appeared Active in GitHub, but its
+browser session reported connection errors (504). Requests to the public links
+reached the GitHub authentication gateway, not the apps; the POST `/ask` check
+returned 401. The deployment is **not currently verified live or publicly
+accessible without GitHub login**.
+
+To restore the existing deployment, resume the existing `psychic bassoon`
+Codespace (do not create a new one), run these commands in separate terminals,
+and set both ports to **Public** in the Codespaces Ports panel:
+
+```bash
+FAST_RERANK=1 python -m uvicorn main:app --host 0.0.0.0 --port 8000
+python -m streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
+```
+
+Then verify the forwarded `/health`, `/docs`, and `/ask` API endpoints and submit
+`What is FAISS?` in the dashboard from a logged-out browser. A GitHub login page,
+401, 404, or 502 is not a successful deployment check. Codespaces is temporary
+hosting: URLs work only while the Codespace and forwarded ports are active. No
+permanent hosting or future uptime is promised. Use the local setup above if the
+demo links are unavailable.
 
 ## 9. Troubleshooting
 
@@ -135,9 +149,10 @@ local setup above if the demo links are unavailable.
   then restart the relevant batch file.
 - **Dashboard says FastAPI is offline** — start `Start_API.bat` first and check
   <http://localhost:8000/health>.
-- **A public link returns 404** — the Codespace or forwarded port is not
-  available; use the local launch scripts. The owner must resume/recreate and
-  re-share a Codespace to restore a public URL.
+- **A public link returns 401, 404, or 502, or shows GitHub login** — resume the
+  existing Codespace, start the appropriate app, and set the forwarded port to
+  **Public** in the Ports panel. Use the local launch scripts if it remains
+  unavailable; Codespaces URLs are temporary.
 - **Slack notifications are not delivered** — Slack is optional; configure
   `SLACK_WEBHOOK_URL` in the environment only when testing live notification
   delivery. Never put a webhook URL or other secret in the project or ZIP.
